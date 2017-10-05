@@ -1,7 +1,7 @@
 :host {
-  width: 515px;
+  width: 245px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   background-color: #ffffff;
   border-radius: 6px;
@@ -9,20 +9,20 @@
 }
 
 .product-photo {
-  background-image: url("../../../../assets/snowboard 2.png");
+  background-color: #AEBEE0;
+  background-image: url("../../../../assets/gl2.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 50%;
+  height: 190px;
 }
 
 .product-info {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #FAFAFA;
   box-sizing: border-box;
-  width: 50%;
   padding: 15px 20px;
   .title {
     h3 {
@@ -34,8 +34,11 @@
     color: #CCCCCC;
     font-size: 11px;
   }
-  .rating {
+  .description {
     padding: 10px 0;
+    color: #444444;
+    font-weight: 700;
+    line-height: 18px;
   }
   .price-box {
     margin: 10px 0;
@@ -64,15 +67,6 @@
       font-size: 18px;
       font-weight: 700;
 
-    }
-    button{
-      text-transform: uppercase;
-      background: #5868D7;
-      padding: 8px 16px;
-      border-radius: 4px;
-      border: transparent;
-      color: #ffffff;
-      font-size: 12px;
     }
   }
 }

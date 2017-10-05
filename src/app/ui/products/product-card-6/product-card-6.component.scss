@@ -1,7 +1,7 @@
 :host {
-  width: 515px;
+  width: 245px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   background-color: #ffffff;
   border-radius: 6px;
@@ -9,20 +9,20 @@
 }
 
 .product-photo {
-  background-image: url("../../../../assets/snowboard 2.png");
+  background-image: url("../../../../assets/gl.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 50%;
+  height: 190px;
 }
 
 .product-info {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #FAFAFA;
   box-sizing: border-box;
-  width: 50%;
   padding: 15px 20px;
   .title {
     h3 {
