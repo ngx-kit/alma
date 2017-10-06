@@ -1,0 +1,44 @@
+:host {
+  width: 245px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 15px;
+  p {
+    margin: 0;
+    background-color: #F4F5FA;
+    padding: 4px 22px;
+  }
+
+}
+
+.product-photo {
+  width: 100%;
+  background-image: url("../../../../assets/j.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+}
+
+.title {
+  width: 100%;
+  background-color: #FAFAFA;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  h3 {
+    margin: 6px 0 2px 0;
+    font-size: 16px;
+  }
+}
+

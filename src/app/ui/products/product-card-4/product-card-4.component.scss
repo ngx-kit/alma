@@ -9,7 +9,8 @@
 }
 
 .product-photo {
-  background-image: url("../../../../assets/snowboard 2.png");
+  background-color: #FAFAFA;
+  background-image: url("../../../../assets/gl.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +21,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #FAFAFA;
+  background-color: #ffffff;
   box-sizing: border-box;
   width: 50%;
   padding: 15px 20px;
@@ -34,8 +35,11 @@
     color: #CCCCCC;
     font-size: 11px;
   }
-  .rating {
+  .description {
     padding: 10px 0;
+    color: #444444;
+    font-weight: 700;
+    line-height: 18px;
   }
   .price-box {
     margin: 10px 0;
