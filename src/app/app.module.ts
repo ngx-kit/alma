@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { KitFullForRootModule } from '@ngx-kit/ngx-kit';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { uiComponents } from './ui/ui';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     KitFullForRootModule,
     KitModule,
   ],

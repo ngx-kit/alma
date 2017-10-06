@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit, Optional, } from '@angular/core';
 import { KitClassService } from '@ngx-kit/ngx-kit';
 import { KitButtonGroupComponent } from '../kit-button-group/kit-button-group.component';
-import { KitButtonColor, KitButtonSize } from '../meta';
+import { KitButtonColor, KitButtonSize, KitButtonType } from '../meta';
 
 /**
  * @apiOrder 1
@@ -27,6 +27,8 @@ export class KitButtonComponent implements OnInit, OnChanges {
 
   @Input() size: KitButtonSize = 'm';
 
+  @Input() type: KitButtonType = 'default';
+
   constructor(private kitClass: KitClassService,
               @Optional() private group: KitButtonGroupComponent) {
   }
@@ -44,6 +46,7 @@ export class KitButtonComponent implements OnInit, OnChanges {
       disabled: this.disabled,
       color: this.color,
       size: this.size,
+      type: this.type,
       groupDirection: !!this.group ? this.group.direction : null,
     });
   }

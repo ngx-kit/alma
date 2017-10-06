@@ -3,12 +3,19 @@
   <div>
     <div class="title"><h3>Product name</h3></div>
     <div class="sub-title">More about product</div>
-  <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-    ea commodo consequat.
+    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex
+      ea commodo consequat.
+    </div>
   </div>
+  <div class="size-box">
+    <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'s'">S</button>
+    <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'m'">M</button>
+    <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'x'">X</button>
+    <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'xl'">XL</button>
   </div>
-  <div class="size-box">SIZE</div>
   <div class="price-box">
     <div class="price">
       <p class="old-price">$360</p>

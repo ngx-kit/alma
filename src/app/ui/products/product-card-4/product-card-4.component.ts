@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-card-4.component.scss'],
 })
 export class ProductCard4Component {
+  size = 'x';
 }

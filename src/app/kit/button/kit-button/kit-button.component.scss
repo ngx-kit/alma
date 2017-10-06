@@ -18,6 +18,9 @@ $borderRadius: 3px;
   transition-property: background;
   transition-duration: .3s;
   text-transform: uppercase;
+  &:focus {
+    outline: none;
+  }
   &.color {
     &-default {
       background: #5868d7;
@@ -53,6 +56,49 @@ $borderRadius: 3px;
     &-l {
       padding: 8px 20px;
       font-size: 1rem;
+    }
+  }
+  &.type {
+    &-default {
+    }
+    &-size {
+      background: #f8f8f8;
+      color: #444444;
+      border: 1px solid transparent;
+      padding: 0;
+      line-height: 32px;
+      height: 32px;
+      width: 32px;
+      text-align: center;
+      &:hover {
+        background: #f2f2f2;
+        color: #333333;
+      }
+      &.checked {
+        border: 1px solid rgba(255, 255, 255, 0.83);
+        box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
+        &.color {
+          &-default {
+            background: #5868d7;
+            color: #ffffff;
+          }
+          &-primary {
+            background: #66eef6;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    &-color {
+      padding: 0;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      &.checked {
+        border: 1px solid rgba(255, 255, 255, 0.83);
+        box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
+      }
     }
   }
   &.groupDirection {
