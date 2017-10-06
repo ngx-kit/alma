@@ -13,6 +13,10 @@ export class AppComponent {
         name: 'star',
         url: '/assets/icons/star.svg',
       },
+      {
+        name: 'cart',
+        url: '/assets/icons/cart.svg',
+      },
     ]);
   }
 }
