@@ -4,15 +4,16 @@
   <div class="title"><h3>Product name</h3></div>
   <div class="sub-title">More about product</div>
   </div>
-  <div class="rating">rating</div>
+  <div class="rating">
+    <kit-rating [value]="3"></kit-rating>
+  </div>
   <div class="price-box">
     <div class="price">
       <p class="old-price">$360</p>
       <p class="new-price">$230</p>
     </div>
     <div>
-      <button>Add to cart</button>
+      <button [kitButton]>Add to cart</button>
     </div>
   </div>
 </div>
-
