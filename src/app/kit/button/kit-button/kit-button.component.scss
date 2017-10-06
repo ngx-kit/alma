@@ -49,9 +49,19 @@ $borderRadius: 3px;
       font-size: .65rem;
     }
     &-m {
-      padding: 8px 16px;
+      padding: .7em 1em;
       border-radius: 4px;
       font-size: .75rem;
+      .icon {
+        position: absolute;
+        left: 1em;
+        top: 0.7em;
+        width: 1.2em;
+        height: 1.2em;
+      }
+      &.withIcon {
+        padding-left: 2.6em;
+      }
     }
     &-l {
       padding: 8px 20px;

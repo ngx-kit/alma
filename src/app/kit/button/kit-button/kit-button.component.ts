@@ -10,6 +10,7 @@ import { KitButtonColor, KitButtonSize, KitButtonType } from '../meta';
   // tslint:disable-next-line
   selector: 'button[kitButton],a[kitButton]',
   template: `
+    <kit-icon *ngIf="icon" [name]="icon" class="icon"></kit-icon>
     <ng-content></ng-content>
   `,
   styleUrls: ['./kit-button.component.scss'],
@@ -22,6 +23,8 @@ export class KitButtonComponent implements OnInit, OnChanges {
   @Input() color: KitButtonColor = 'default';
 
   @Input() disabled = false;
+
+  @Input() icon: string;
 
   @Input() kitButton: void;
 
@@ -47,6 +50,7 @@ export class KitButtonComponent implements OnInit, OnChanges {
       color: this.color,
       size: this.size,
       type: this.type,
+      withIcon: !!this.icon,
       groupDirection: !!this.group ? this.group.direction : null,
     });
   }
