@@ -1,0 +1,46 @@
+<div class="preview-box">
+  <div class="preview">
+    <div class="item1 -active"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+    <div class="item4"></div>
+  </div>
+  <div class="product-photo"></div>
+</div>
+<div class="product-info">
+  <div>
+    <div class="sub-title">More about product</div>
+    <div class="title"><h3>Product name</h3></div>
+    <div class="price-box">
+      <div class="price">
+        $830
+      </div>
+      <div class="rating">
+        <kit-rating [value]="3"></kit-rating>
+      </div>
+    </div>
+    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex
+      ea commodo consequat.
+    </div>
+    <div class="colors">
+      <p>Select color</p>
+      <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'1'" [style.background]="'#ccc'"></button>
+      <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'2'" [style.background]="'#5454cc'"></button>
+      <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'3'" [style.background]="'#dd59c4'"></button>
+    </div>
+    <div class="size">
+      <p>Select size</p>
+      <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'s'">S</button>
+      <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'m'">M</button>
+      <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'x'">X</button>
+    </div>
+    <div class="quantity">
+      quantity
+    </div>
+  </div>
+  <button [kitButton] [icon]="'cart'">Add to cart</button>
+</div>
+

@@ -45,6 +45,17 @@
         <ui-product-card-9></ui-product-card-9>
         <ui-product-card-10></ui-product-card-10>
       </div>
+      <div class="row">
+        <ui-product-card-11></ui-product-card-11>
+        <ui-product-card-12></ui-product-card-12>
+      </div>
+      <div class="row">
+        <ui-product-card-13></ui-product-card-13>
+      </div>
+      <div class="row">
+        <ui-product-card-14></ui-product-card-14>
+        <ui-product-card-15></ui-product-card-15>
+      </div>
     </div>
 
   </div>
@@ -62,9 +73,12 @@
       <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'m'">M</button>
       <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'x'">X</button>
 
-      <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'1'" [style.background]="'#ccc'"></button>
-      <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'2'" [style.background]="'#5454cc'"></button>
-      <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'3'" [style.background]="'#dd59c4'"></button>
+      <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'1'"
+              [style.background]="'#ccc'"></button>
+      <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'2'"
+              [style.background]="'#5454cc'"></button>
+      <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'3'"
+              [style.background]="'#dd59c4'"></button>
 
       <kit-rating [value]="3"></kit-rating>
     </div>

@@ -8,6 +8,11 @@ import { ProductCard7Component } from './products/product-card-7/product-card-7.
 import { ProductCard8Component } from './products/product-card-8/product-card-8.component';
 import { ProductCard9Component } from './products/product-card-9/product-card-9.component';
 import { ProductCard10Component } from './products/product-card-10/product-card-10.component';
+import { ProductCard11Component } from './products/product-card-11/product-card-11.component';
+import { ProductCard12Component } from './products/product-card-12/product-card-12.component';
+import { ProductCard13Component } from './products/product-card-13/product-card-13.component';
+import { ProductCard14Component } from './products/product-card-14/product-card-14.component';
+import { ProductCard15Component } from './products/product-card-15/product-card-15.component';
 
 export const uiComponents = [
   ProductCard1Component,
@@ -20,4 +25,9 @@ export const uiComponents = [
   ProductCard8Component,
   ProductCard9Component,
   ProductCard10Component,
+  ProductCard11Component,
+  ProductCard12Component,
+  ProductCard13Component,
+  ProductCard14Component,
+  ProductCard15Component,
 ];
