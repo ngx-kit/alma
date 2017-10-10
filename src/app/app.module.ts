@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { KitFullForRootModule } from '@ngx-kit/ngx-kit';
 import { AppComponent } from './app.component';
 import { KitModule } from './kit/kit.module';
@@ -16,6 +17,7 @@ import { uiComponents } from './ui/ui';
   imports: [
     BrowserModule,
     FormsModule,
+    BrowserAnimationsModule,
     KitFullForRootModule,
     KitModule,
   ],

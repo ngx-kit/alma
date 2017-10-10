@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  flex-direction: row;
+}
+
+.thumbs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100px;
+  a {
+    margin-right: 10px;
+    img {
+      height: 100px;
+      width: 100px;
+    }
+    &.-active {
+      box-shadow: 0 0 10px 5px rgba(245, 243, 243, 1);
+      border-radius: 6px;
+    }
+  }
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+}
