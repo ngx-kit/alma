@@ -1,0 +1,58 @@
+:host {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.product-photo {
+  background-image: url("../../../../assets/snowboard 2.png");
+  background-size: cover;
+  background-position: center;
+  width: 45%;
+  background-color: #66EEF6;
+}
+
+.product-info {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+  .title {
+    h3 {
+      margin: 6px 0 2px 0;
+      font-size: 26px;
+    }
+  }
+  .sub-title {
+    color: #CCCCCC;
+    font-size: 12px;
+  }
+  .price {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  .description {
+    padding: 10px 0;
+    color: #444444;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .option-box {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    button {
+      margin-right: 10px;
+    }
+  }
+}

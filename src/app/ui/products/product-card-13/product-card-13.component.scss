@@ -1,0 +1,109 @@
+:host {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  > div {
+    width: 50%;
+  }
+}
+
+.preview-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-photo {
+  background-image: url("../../../../assets/snowboard 2.png");
+  background-size: cover;
+  background-position: center;
+  width: 60%;
+  height: 450px;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  > div {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    &.-active {
+      box-shadow: 0 0 10px 5px rgba(245, 243, 243, 1);
+      border-radius: 6px;
+    }
+  }
+  .item1 {
+    background-image: url("../../../../assets/snowboard 2.png");
+  }
+  .item2 {
+    background-image: url("../../../../assets/snowboard .png");
+  }
+  .item3 {
+    background-image: url("../../../../assets/snowboard 2.png");
+  }
+  .item4 {
+    background-image: url("../../../../assets/snowboard .png");
+  }
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+  .title {
+    h3 {
+      margin: 6px 0 2px 0;
+      font-size: 26px;
+    }
+  }
+  .sub-title {
+    color: #CCCCCC;
+    font-size: 14px;
+  }
+  .price-box {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    .price {
+      font-size: 24px;
+      margin-right: 30px;
+    }
+  }
+  .description {
+    padding: 10px 0;
+    color: #444444;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .colors, .size {
+    color: #CCCCCC;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    p {
+      margin: 0 20px 0 0;
+      line-height: 24px;
+    }
+    button {
+      margin-right: 10px;
+    }
+  }
+  .size {
+    p {
+      line-height: 34px;
+    }
+  }
+}
