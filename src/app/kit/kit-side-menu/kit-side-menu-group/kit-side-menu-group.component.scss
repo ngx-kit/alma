@@ -9,13 +9,15 @@
 .title {
   display: flex;
   flex-direction: row;
-  padding: 8px 16px;
+  padding: 12px 0;
   cursor: pointer;
+  font-size: 14px;
   .wrapper {
     flex-grow: 1;
   }
   .arrow {
     border: 0;
     background: transparent;
+    padding-right: 15px;
   }
 }

@@ -1,0 +1,102 @@
+<div class="search">
+  <input type="search" id="mySearch" name="q" placeholder="Search Term">
+</div>
+<kit-side-menu>
+  <kit-side-menu-group>
+    <div class="title">Categories</div>
+    <kit-side-menu-sub>
+      <kit-side-menu-group>
+        Dresses
+        <kit-side-menu-sub *kitCollapse>
+          <div>Gr 1 Item 1</div>
+          <div>Gr 1 Item 2</div>
+        </kit-side-menu-sub>
+      </kit-side-menu-group>
+      <kit-side-menu-group>
+        Shirts
+        <kit-side-menu-sub *kitCollapse>
+          <div>Gr 1 Item 1</div>
+          <div>Gr 1 Item 2</div>
+        </kit-side-menu-sub>
+      </kit-side-menu-group>
+      <kit-side-menu-group>
+        Accessories
+        <kit-side-menu-sub>
+          <div>
+            <input [kitInput] type="checkbox" checked>
+            <span>Glasses</span>
+          </div>
+          <div>
+            <input [kitInput] type="checkbox">
+            <span>Glasses</span>
+          </div>
+          <div>
+            <input [kitInput] type="checkbox">
+            <span>Glasses</span>
+          </div>
+          <kit-side-menu-item>
+            <input [kitInput] type="checkbox">
+            <span>Glasses</span>
+          </kit-side-menu-item>
+        </kit-side-menu-sub>
+      </kit-side-menu-group>
+    </kit-side-menu-sub>
+  </kit-side-menu-group>
+  <kit-side-menu-group>
+    <div class="title">Brand</div>
+    <kit-side-menu-sub>
+      <div>
+        <input [kitInput] type="checkbox" checked>
+        <span>Glasses</span>
+      </div>
+      <div>
+        <input [kitInput] type="checkbox">
+        <span>Glasses</span>
+      </div>
+    </kit-side-menu-sub>
+  </kit-side-menu-group>
+  <kit-side-menu-group>
+    <div class="title">Color</div>
+    <kit-side-menu-sub>
+      <div class="row">
+        <div>
+          <div class="item">
+            <input [kitInput] type="checkbox" checked>
+            <span>Black</span>
+          </div>
+          <div class="item">
+            <input [kitInput] type="checkbox">
+            <span>White</span>
+          </div>
+          <div class="item">
+            <input [kitInput] type="checkbox">
+            <span>Purple</span>
+          </div>
+        </div>
+        <div>
+          <div class="item">
+            <input [kitInput] type="checkbox">
+            <span>Black</span>
+          </div>
+          <div class="item">
+            <input [kitInput] type="checkbox">
+            <span>White</span>
+          </div>
+          <div class="item">
+            <input [kitInput] type="checkbox">
+            <span>Purple</span>
+          </div>
+        </div>
+      </div>
+    </kit-side-menu-sub>
+  </kit-side-menu-group>
+</kit-side-menu>
+<div class="filter">
+  <div class="title">Filter By</div>
+  <ul>
+    <li>Glasses</li>
+    <li>Glasses</li>
+    <li>Black</li>
+  </ul>
+  <button class="reset">Reset All</button>
+</div>

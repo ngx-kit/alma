@@ -14,6 +14,10 @@ import { ProductCard6Component } from './products/product-card-6/product-card-6.
 import { ProductCard7Component } from './products/product-card-7/product-card-7.component';
 import { ProductCard8Component } from './products/product-card-8/product-card-8.component';
 import { ProductCard9Component } from './products/product-card-9/product-card-9.component';
+import { ProductCard17Component } from './products/product-card-17/product-card-17.component';
+import { ProductCard18Component } from './products/product-card-18/product-card-18.component';
+import { ProductCard19Component } from './products/product-card-19/product-card-19.component';
+import { ProductCard20Component } from './products/product-card-20/product-card-20.component';
 
 export const uiComponents = [
   ProductCard1Component,
@@ -32,4 +36,8 @@ export const uiComponents = [
   ProductCard14Component,
   ProductCard15Component,
   ProductCard16Component,
+  ProductCard17Component,
+  ProductCard18Component,
+  ProductCard19Component,
+  ProductCard20Component,
 ];

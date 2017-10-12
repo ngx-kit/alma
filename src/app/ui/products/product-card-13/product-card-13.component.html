@@ -31,9 +31,7 @@
       <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'m'">M</button>
       <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'x'">X</button>
     </div>
-    <div class="quantity">
-      quantity
-    </div>
+    <kit-qt-input [ngModel]="4"></kit-qt-input>
   </div>
   <button [kitButton] [icon]="'cart'">Add to cart</button>
 </div>

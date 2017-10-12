@@ -1,10 +1,13 @@
 :host {
   display: block;
-  padding: 8px 16px;
-  border-bottom: 1px solid #eeeeee;
-  color: #333333;
+  padding: 4px 0;
+  border-bottom: none;
   cursor: pointer;
   text-decoration: none;
+  color: #797575;
+  font-weight: 400;
+
+
   &:last-child {
     border-bottom: 0;
   }

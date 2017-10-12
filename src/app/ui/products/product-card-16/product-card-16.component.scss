@@ -1,16 +1,47 @@
 :host {
-  width: 330px;
+  width: 100%;
   background-color: #ffffff;
   border-radius: 6px;
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  padding: 20px 30px;
 }
 
-.title {
-  background: #F8F8F8;
-  padding: 15px 20px;
-  color: #444444;
-  font-weight: 700;
-  border-bottom: 1px solid #f1f0f0;
+.search {
+  input {
+    width: 100%;
+    margin-right: 10px;
+    border: none;
+    border-bottom: 1px solid #f1f0f0;
+    padding: 10px 0;
+    &:focus{
+      outline: none;
+      border-bottom: 1px solid #66EEF6;
+    }
+  }
+}
+.options{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding-top: 20px;
+  justify-content: space-between;
+  .title{
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: #CCCCCC;
+    font-weight: 700;
+    font-size: 11px;
+  }
+  button{
+    margin-right: 8px;
+  }
+  .price{
+    display: flex;
+    flex-direction: row;
+    kit-slider{
+      width: 250px;
+    }
+  }
 }
