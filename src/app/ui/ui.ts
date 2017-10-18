@@ -18,6 +18,8 @@ import { ProductCard17Component } from './products/product-card-17/product-card-
 import { ProductCard18Component } from './products/product-card-18/product-card-18.component';
 import { ProductCard19Component } from './products/product-card-19/product-card-19.component';
 import { ProductCard20Component } from './products/product-card-20/product-card-20.component';
+import { ProductCard21Component } from './products/product-card-21/product-card-21.component';
+import { ProductCard22Component } from './products/product-card-22/product-card-22.component';
 
 export const uiComponents = [
   ProductCard1Component,
@@ -40,4 +42,6 @@ export const uiComponents = [
   ProductCard18Component,
   ProductCard19Component,
   ProductCard20Component,
+  ProductCard21Component,
+  ProductCard22Component,
 ];

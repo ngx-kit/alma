@@ -1,0 +1,83 @@
+<kit-side-menu>
+  <kit-side-menu-group>
+    <div class="title">Type of Clothes</div>
+    <kit-side-menu-sub>
+      <div class="row">
+        <button class="item">
+          <span class="icon">icon</span>
+          <span class="title">Jeans</span>
+        </button>
+        <button class="item">
+          <span class="icon">icon</span>
+          <span class="title">Shirts</span>
+        </button>
+        <button class="item">
+          <span class="icon">icon</span>
+          <span class="title">Dresses</span>
+        </button>
+        <button class="item">
+          <span class="icon">icon</span>
+          <span class="title">Panties</span>
+        </button>
+        <button class="item">
+          <span class="icon">icon</span>
+          <span class="title">Bags</span>
+        </button>
+        <button class="item">
+          <span class="icon">icon</span>
+          <span class="title">Watches</span>
+        </button>
+      </div>
+    </kit-side-menu-sub>
+  </kit-side-menu-group>
+  <kit-side-menu-group>
+    <div class="title">Color</div>
+    <kit-side-menu-sub>
+      <div class="black">
+        <input [kitInput] type="checkbox" checked>
+        <span>Black</span>
+      </div>
+      <div>
+        <input [kitInput] type="checkbox">
+        <span>White</span>
+      </div>
+      <div>
+        <input [kitInput] type="checkbox">
+        <span>Purple</span>
+      </div>
+      <div>
+        <input [kitInput] type="checkbox">
+        <span>Black</span>
+      </div>
+      <div>
+        <input [kitInput] type="checkbox">
+        <span>White</span>
+      </div>
+      <div>
+        <input [kitInput] type="checkbox">
+        <span>Purple</span>
+      </div>
+    </kit-side-menu-sub>
+  </kit-side-menu-group>
+  <kit-side-menu-group>
+    <div class="title">Size</div>
+    <kit-side-menu-sub>
+      <div class="size-box">
+        <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'xs'">XS</button>
+        <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'s'">S</button>
+        <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'m'">M</button>
+        <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'l'">L</button>
+        <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'xl'">XL</button>
+      </div>
+    </kit-side-menu-sub>
+  </kit-side-menu-group>
+  <kit-side-menu-group>
+    <div class="title">Price Range</div>
+    <kit-side-menu-sub>
+      <kit-slider [range]="true" [ngModel]="[10, 50]"></kit-slider>
+    </kit-side-menu-sub>
+  </kit-side-menu-group>
+</kit-side-menu>
+<div class="footer">
+  <a href="">Apply Search</a>
+</div>
