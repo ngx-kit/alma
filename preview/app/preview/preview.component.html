@@ -79,32 +79,32 @@
   <h2>Kit Elements</h2>
   <div class="main-wrapper">
     <div class="wrapper">
-      <button [kitButton]>Button</button>
+      <button [uiButton]>Button</button>
 
-      <button [kitButton] [color]="'primary'">Primary button</button>
+      <button [uiButton] [color]="'primary'">Primary button</button>
 
-      <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'s'">S</button>
-      <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'m'">M</button>
-      <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'x'">X</button>
+      <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'s'">S</button>
+      <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'m'">M</button>
+      <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'x'">X</button>
 
-      <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'1'"
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'1'"
               [style.background]="'#ccc'"></button>
-      <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'2'"
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'2'"
               [style.background]="'#5454cc'"></button>
-      <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'3'"
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'3'"
               [style.background]="'#dd59c4'"></button>
 
-      <kit-rating [value]="3"></kit-rating>
+      <ui-rating [value]="3"></ui-rating>
 
       <ui-qt-input [ngModel]="4"></ui-qt-input>
 
-      <kit-slider [range]="true" [ngModel]="[10, 50]"></kit-slider>
+      <ui-slider [range]="true" [ngModel]="[10, 50]"></ui-slider>
 
-      <input [kitInput] type="text">
-      <input [kitInput] type="checkbox">
-      <input [kitInput] type="radio">
+      <input [uiInput] type="text">
+      <input [uiInput] type="checkbox">
+      <input [uiInput] type="radio">
 
-      <kit-custom-select [options]="options"></kit-custom-select>
+      <ui-custom-select [options]="options"></ui-custom-select>
     </div>
   </div>
 </div>

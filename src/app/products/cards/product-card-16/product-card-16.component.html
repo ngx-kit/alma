@@ -8,21 +8,21 @@
   </div>
   <div class="colors">
     <span class="title">Color</span>
-    <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'1'"
+    <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'1'"
             [style.background]="'#ccc'"></button>
-    <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'2'"
+    <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'2'"
             [style.background]="'#5454cc'"></button>
-    <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'3'"
+    <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'3'"
             [style.background]="'#dd59c4'"></button>
   </div>
   <div class="size">
     <span class="title">Size</span>
-    <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'s'">S</button>
-    <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'m'">M</button>
-    <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'x'">X</button>
+    <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'s'">S</button>
+    <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'m'">M</button>
+    <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'x'">X</button>
   </div>
   <div class="price">
     <span class="title">Price</span>
-    <kit-slider [range]="true" [ngModel]="[10, 50]"></kit-slider>
+    <ui-slider [range]="true" [ngModel]="[10, 50]"></ui-slider>
   </div>
 </div>

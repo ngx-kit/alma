@@ -1,0 +1,77 @@
+<div class="search">
+  <input type="search" id="mySearch" name="q" placeholder="Search Filter">
+</div>
+<div class="filter-section">
+  <div>
+    <div class="title">Categories</div>
+    ede
+  </div>
+  <div>
+    <div class="title">Brand</div>
+    eded
+  </div>
+  <div>
+    <div class="title">Size</div>
+    <div class="size-box">
+      <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'xs'">XS</button>
+      <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'s'">S</button>
+      <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'m'">M</button>
+      <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'l'">L</button>
+      <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'xl'">XL</button>
+    </div>
+  </div>
+  <div>
+    <div class="title">Type</div>
+    <div class="type-box">
+      <div>
+        <span>Formal</span>
+        <input [uiInput] type="checkbox">
+      </div>
+      <div>
+        <span>Wedding Party</span>
+        <input [uiInput] type="checkbox" checked>
+      </div>
+      <div>
+        <span>Club</span>
+        <input [uiInput] type="checkbox">
+      </div>
+      <div>
+        <span>Casual</span>
+        <input [uiInput] type="checkbox">
+      </div>
+      <div>
+        <span>Cocktail</span>
+        <input [uiInput] type="checkbox">
+      </div>
+      <div>
+        <span>Homecomming</span>
+        <input [uiInput] type="checkbox">
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="title">Color</div>
+    <div class="color-box">
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'1'"
+              [style.background]="'#ccc'"></button>
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'2'"
+              [style.background]="'#5454cc'"></button>
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'3'"
+              [style.background]="'#dd59c4'"></button>
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'4'"
+              [style.background]="'#DDC54A'"></button>
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'5'"
+              [style.background]="'#55DD27'"></button>
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'6'"
+              [style.background]="'#5BDDA4'"></button>
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'6'"
+              [style.background]="'#DD4E71'"></button>
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'6'"
+              [style.background]="'#00DDD3'"></button>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <a href="">Update filter</a>
+</div>
+
