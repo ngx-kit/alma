@@ -1,0 +1,20 @@
+<div class="title">Side menu</div>
+<ui-side-menu>
+  <kit-side-menu-item>Item 1</kit-side-menu-item>
+  <kit-side-menu-item>Item 2</kit-side-menu-item>
+  <a href="javascript:void(0)" [kitSideMenuItem]>Item 3</a>
+  <ui-side-menu-group>
+    Group 1
+    <ui-side-menu-sub *kitCollapse>
+      <kit-side-menu-item>Gr 1 Item 1</kit-side-menu-item>
+      <kit-side-menu-item>Gr 1 Item 2</kit-side-menu-item>
+    </ui-side-menu-sub>
+  </ui-side-menu-group>
+  <ui-side-menu-group>
+    Group 2
+    <ui-side-menu-sub *kitCollapse>
+      <kit-side-menu-item>Gr 2 Item 1</kit-side-menu-item>
+      <kit-side-menu-item>Gr 2 Item 2</kit-side-menu-item>
+    </ui-side-menu-sub>
+  </ui-side-menu-group>
+</ui-side-menu>

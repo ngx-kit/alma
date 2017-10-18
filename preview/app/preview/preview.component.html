@@ -1,0 +1,104 @@
+<div class="head">
+  <h1>Alma</h1>
+  <h2>UI Kit</h2>
+</div>
+<div class="sub-head">
+  <div class="wrapper">
+    <div class="title">
+      Set of designs and Angular components<br>
+      for eCommerce
+    </div>
+    <div class="sub-title">
+      <p><span>50</span> UI elements</p>
+      <p><span>4</span> categories</p>
+      <p><span>FREE</span> fons & icons</p>
+    </div>
+    <div class="navigation">
+      <a href="">Products</a>
+      <a href="">Forms</a>
+      <a href="">Pricing</a>
+      <a href="">Headers</a>
+      <a href="">Footers</a>
+    </div>
+  </div>
+</div>
+
+<div class="products">
+  <h2>Products</h2>
+  <div class="main-wrapper">
+    <div class="wrapper">
+      <div class="row">
+        <ui-product-card-1></ui-product-card-1>
+        <ui-product-card-2></ui-product-card-2>
+      </div>
+      <div class="row">
+        <ui-product-card-3></ui-product-card-3>
+      </div>
+      <div class="row">
+        <ui-product-card-4></ui-product-card-4>
+        <ui-product-card-5></ui-product-card-5>
+        <ui-product-card-6></ui-product-card-6>
+      </div>
+      <div class="row">
+        <ui-product-card-7></ui-product-card-7>
+        <ui-product-card-8></ui-product-card-8>
+        <ui-product-card-9></ui-product-card-9>
+        <ui-product-card-10></ui-product-card-10>
+      </div>
+      <div class="row">
+        <ui-product-card-11></ui-product-card-11>
+        <ui-product-card-12></ui-product-card-12>
+      </div>
+      <div class="row">
+        <ui-product-card-13></ui-product-card-13>
+      </div>
+      <div class="row">
+        <ui-product-card-14></ui-product-card-14>
+        <ui-product-card-15></ui-product-card-15>
+      </div>
+      <div class="row">
+        <ui-product-card-16></ui-product-card-16>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="kit">
+  <h2>Kit Elements</h2>
+  <div class="main-wrapper">
+    <div class="wrapper">
+      <button [kitButton]>Button</button>
+
+      <button [kitButton] [color]="'primary'">Primary button</button>
+
+      <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'s'">S</button>
+      <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'m'">M</button>
+      <button [kitButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'x'">X</button>
+
+      <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'1'"
+              [style.background]="'#ccc'"></button>
+      <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'2'"
+              [style.background]="'#5454cc'"></button>
+      <button [kitButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'3'"
+              [style.background]="'#dd59c4'"></button>
+
+      <kit-rating [value]="3"></kit-rating>
+
+      <ui-qt-input [ngModel]="4"></ui-qt-input>
+
+      <kit-slider [range]="true" [ngModel]="[10, 50]"></kit-slider>
+
+      <input [kitInput] type="text">
+      <input [kitInput] type="checkbox">
+      <input [kitInput] type="radio">
+
+      <kit-custom-select [options]="options"></kit-custom-select>
+    </div>
+  </div>
+</div>
+
+<h2>Forms</h2>
+<h2>Headers</h2>
+<h2>Footers</h2>
+<h2>Pricing</h2>

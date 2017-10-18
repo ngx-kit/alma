@@ -5,6 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:preview": "ng serve --app=preview",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
