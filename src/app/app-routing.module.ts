@@ -15,6 +15,18 @@ const routes: Routes = [
     path: 'products',
     loadChildren: './products/products.module#ProductsModule',
   },
+  {
+    path: 'bag',
+    loadChildren: './bag/bag.module#BagModule',
+  },
+  {
+    path: 'checkout',
+    loadChildren: './checkout/checkout.module#CheckoutModule',
+  },
+  {
+    path: 'auth',
+    loadChildren: './auth/auth.module#AuthModule',
+  },
 ];
 
 @NgModule({

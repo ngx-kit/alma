@@ -6,8 +6,10 @@ import { KitFullForRootModule } from '@ngx-kit/ngx-kit';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { UiModule } from './ui/ui.module';
+import { FooterModule } from './footer/footer.module';
+import { HeaderModule } from './header/header.module';
 import { cards } from './products/cards/cards';
+import { UiModule } from './ui/ui.module';
 
 @NgModule({
   imports: [
@@ -18,6 +20,8 @@ import { cards } from './products/cards/cards';
     CoreModule,
     AppRoutingModule,
     UiModule,
+    HeaderModule,
+    FooterModule,
   ],
   declarations: [
     AppComponent,
