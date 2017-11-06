@@ -1,0 +1,76 @@
+:host {
+  margin: 50px 0;
+}
+
+.main-wrapper {
+  margin: 0 auto;
+  width: 1180px;
+}
+
+.basket-table {
+  border: 0;
+  border-collapse: collapse;
+  margin: 50px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  th {
+    padding: 1em;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .description {
+    text-align: left;
+    width: 60%;
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .product-photo {
+      margin-right: 20px;
+      width: 90px;
+      height: 90px;
+      text-align: center;
+      img {
+        height: 100%;
+      }
+    }
+    p {
+      margin: 10px 0;
+    }
+    .product-name {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+  .subtotal {
+    font-weight: 700;
+  }
+  td {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 14px;
+  }
+  .total-label {
+    text-align: right;
+    text-transform: uppercase;
+  }
+  .total-value {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+.basket-button{
+ text-align: right;
+}
+.checkout {
+  line-height: 48px;
+  padding: 0 24px;
+  background: #333333;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+}

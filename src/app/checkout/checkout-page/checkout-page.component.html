@@ -1,3 +1,261 @@
-<p>
-  checkout-page works!
-</p>
+<div class="main-wrapper">
+  <h1>Checkout</h1>
+  <div class="instruction">
+    <p>Please provide your billing and delivery information below.</p>
+    <p class="required-field">* Indicates required field</p>
+  </div>
+  <div class="checkout-box">
+    <div class="customer-details">
+      <section>
+        <div class="header">
+          <strong>1</strong>
+          <span>Delivery<br> Address</span>
+        </div>
+        <fieldset>
+          <div class="field">
+            <div class="label-wrap">
+              <label class="required">Country</label>
+            </div>
+            <div class="container">
+              <select [uiSelect] [(ngModel)]="selectModel">
+                <option value="1">Ukraine</option>
+                <option value="2">Ukraine</option>
+                <option value="3">Ukraine</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <div class="label-wrap">
+              <label class="required">Full Name</label>
+            </div>
+            <div class="container">
+              <input type="text" [uiInput] [(ngModel)]="inputModel">
+            </div>
+          </div>
+          <div class="field">
+            <div class="label-wrap">
+              <label class="required">Post Code/Zip</label>
+            </div>
+            <div class="container">
+              <input type="text" [uiInput] [(ngModel)]="inputModel">
+            </div>
+          </div>
+          <div class="field">
+            <div class="label-wrap">
+              <label>Company Name</label>
+            </div>
+            <div class="container">
+              <input type="text" [uiInput] [(ngModel)]="inputModel">
+            </div>
+          </div>
+          <div class="field">
+            <div class="label-wrap">
+              <label class="required">House Name/Number</label>
+            </div>
+            <div class="container">
+              <input type="text" [uiInput] [(ngModel)]="inputModel">
+            </div>
+          </div>
+          <div class="field">
+            <div class="label-wrap">
+              <label class="required">Address 1</label>
+            </div>
+            <div class="container">
+              <input type="text" [uiInput] [(ngModel)]="inputModel">
+            </div>
+          </div>
+          <div class="field">
+            <div class="label-wrap">
+              <label>Address 2</label>
+            </div>
+            <div class="container">
+              <input type="text" [uiInput] [(ngModel)]="inputModel">
+            </div>
+          </div>
+          <div class="field">
+            <div class="label-wrap">
+              <label class="required">Town/City</label>
+            </div>
+            <div class="container">
+              <input type="text" [uiInput] [(ngModel)]="inputModel">
+            </div>
+          </div>
+          <div class="field">
+            <div class="label-wrap">
+              <label>State</label>
+            </div>
+            <div class="container">
+              <input type="text" [uiInput] [(ngModel)]="inputModel">
+            </div>
+          </div>
+          <div class="field">
+            <div class="label-wrap">
+              <label class="required">Contact Number</label>
+            </div>
+            <div class="container">
+              <input type="text" [uiInput] [(ngModel)]="inputModel">
+            </div>
+          </div>
+        </fieldset>
+      </section>
+      <section>
+        <div class="header">
+          <strong>2</strong>
+          <span>Select<br> Delivery<br> Option</span>
+        </div>
+        <fieldset>
+          <div class="delivery-option">
+            <div class="field radio">
+              <label>
+                <input type="radio" value="1" [uiInput] [(ngModel)]="radioModel">
+                Standard Delivery<br>
+                <span class="cost">Free</span>
+              </label>
+            </div>
+            <div class="field radio">
+              <label>
+                <input type="radio" value="2" [uiInput] [(ngModel)]="radioModel">
+                Tracked Delivery<br>
+                <span class="cost">$19.04</span>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </section>
+      <section>
+        <div class="header">
+          <strong>3</strong>
+          <span>Select<br> Payment<br> Method</span>
+        </div>
+        <fieldset>
+          <div class="payment-option">
+            <div class="field radio">
+              <label>
+                <input type="radio" value="1" [uiInput] [(ngModel)]="radioModel">
+                Credit/Debit Card
+              </label>
+            </div>
+            <div class="field">
+              <div class="label-wrap">
+                <label class="required">Card Number</label>
+              </div>
+              <div class="container">
+                <input type="text" [uiInput] [(ngModel)]="inputModel">
+              </div>
+            </div>
+            <div class="field">
+              <div class="label-wrap">
+                <label class="required">Name on card</label>
+              </div>
+              <div class="container">
+                <input type="text" [uiInput] [(ngModel)]="inputModel">
+              </div>
+            </div>
+            <div class="field">
+              <div class="label-wrap">
+                <label class="required">Expiry Date</label>
+              </div>
+              <div class="container expiry-date">
+                <select class="month" [uiSelect] [(ngModel)]="selectModel">
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                </select>
+                <select class="year" [uiSelect] [(ngModel)]="selectModel">
+                  <option value="1">2017</option>
+                  <option value="2">2018</option>
+                  <option value="3">2019</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <div class="label-wrap">
+                <label class="required">CV2</label>
+              </div>
+              <div class="container">
+                <input class="cv" type="text" [uiInput] [(ngModel)]="inputModel">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </section>
+      <div class="submit-button">
+        <button class="submit">Submit My Order</button>
+      </div>
+    </div>
+    <aside>
+      <article class="order-summary">
+        <div class="header">
+          Order Summary
+        </div>
+        <div class="basket">
+          <table class="basket-table">
+            <thead class="panel-head">
+            <tr>
+              <th class="description">
+                Items
+              </th>
+              <th class="price">
+                Price
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="product-item">
+              <td class="description">
+                <div class="container">
+                  <div class="product-photo">
+                    <img src="../../../assets/0675_Sacha-Scarf_14-1200x1265.png">
+                  </div>
+                  <div>
+                    <p class="product-name">Balmain Hair Moisturising Shampoo (300ml) </p>
+                  </div>
+                </div>
+              </td>
+              <td class="price">$29.85</td>
+            </tr>
+            <tr class="product-item">
+              <td class="description">
+                <div class="container">
+                  <div class="product-photo">
+                    <img src="../../../assets/arc-teryx-diplomat-scarf.jpg">
+                  </div>
+                  <div>
+                    <p class="product-name">Balmain Hair Moisturising Shampoo (300ml) </p>
+                  </div>
+                </div>
+              </td>
+              <td class="price">$29.85</td>
+            </tr>
+            <tr class="product-item">
+              <td class="description">
+                <div class="container">
+                  <div class="product-photo">
+                    <img src="../../../assets/barts-chani.jpg">
+                  </div>
+                  <div>
+                    <p class="product-name">Balmain Hair Moisturising Shampoo (300ml) </p>
+                  </div>
+                </div>
+              </td>
+              <td class="price">$29.85</td>
+            </tr>
+            <tr class="product-item">
+              <td class="description">Delivery</td>
+              <td>$0.00</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+              <td>Order Total:</td>
+              <td>$104.65</td>
+            </tr>
+            </tfoot>
+          </table>
+        </div>
+
+
+      </article>
+    </aside>
+  </div>
+</div>

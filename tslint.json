@@ -117,7 +117,7 @@
     "directive-selector": [
       true,
       "attribute",
-      ["app", "kit"],
+      ["app", "kit", "ui"],
       "camelCase"
     ],
     "component-selector": [

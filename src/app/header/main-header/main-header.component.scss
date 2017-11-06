@@ -1,0 +1,58 @@
+:host {
+
+}
+
+.header {
+  background: #fff;
+  border-bottom: 2px solid #e1e1e1;
+  color: #333434;
+  text-transform: uppercase;
+}
+
+.content-inner {
+  margin: 0 auto;
+  width: 1180px;
+}
+
+.head {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 0 10px;
+  text-align: right;
+  > div {
+    box-sizing: border-box;
+    width: 33%;
+  }
+}
+
+.logo {
+  font-size: 50px;
+  letter-spacing: 12px;
+  text-align: left;
+}
+
+.currency {
+  padding-right: 70px;
+}
+
+.navigation {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.account-wrap {
+  display: flex;
+  > div {
+    margin-left: 22px;
+  }
+  a {
+    color: #333434;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,40 @@
+:host {
+  background-color: #333434;
+  color: #e7e7e7;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.content-inner {
+  margin: 0 auto;
+  width: 1180px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+ul {
+  list-style: none;
+  li {
+    font-size: 14px;
+    margin: 8px 0;
+    a{
+      color: #e7e7e7;
+      text-decoration: none;
+    }
+  }
+}
+.copyright{
+  align-items: flex-end;
+  display: flex;
+  height: 100%;
+}

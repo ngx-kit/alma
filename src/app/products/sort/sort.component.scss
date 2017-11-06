@@ -1,0 +1,12 @@
+.sort {
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  align-items: center;
+}
+
+p {
+  font-size: 12px;
+  flex-shrink: 0;
+  margin: 0 8px 0 0;
+}

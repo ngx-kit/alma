@@ -1,0 +1,77 @@
+:host {
+  margin: 50px 0;
+}
+
+.main-wrapper {
+  margin: 0 auto;
+  width: 1180px;
+}
+
+.container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
+.login-panel {
+  border: 1px solid #e1e1e1;
+  margin: 0 24px;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+.forgotten-password {
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.login-box {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.login {
+  line-height: 48px;
+  padding: 0 24px;
+  background: #333333;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.social-box {
+  text-align: center;
+  p {
+    font-size: 20px;
+  }
+}
+
+.facebook {
+  line-height: 48px;
+  padding: 0 24px;
+  background: #4070C4;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+}

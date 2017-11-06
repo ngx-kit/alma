@@ -1,3 +1,39 @@
-<p>
-  sign-up-page works!
-</p>
+<div class="main-wrapper">
+  <div class="login-panel">
+    <h2 class="title">About You</h2>
+    <form>
+      <div>
+        <label>Full Name:</label>
+        <input type="text" [uiInput] [(ngModel)]="inputModel">
+      </div>
+      <div>
+        <label>Email address</label>
+        <input type="text" [uiInput] [(ngModel)]="inputModel">
+      </div>
+      <div>
+        <label>Confirm Email:</label>
+        <input type="text" [uiInput] [(ngModel)]="inputModel">
+      </div>
+      <div>
+        <label>Password:</label>
+        <input type="text" [uiInput] [(ngModel)]="inputModel">
+      </div>
+      <div>
+        <label>Confirm Password:</label>
+        <input type="text" [uiInput] [(ngModel)]="inputModel">
+      </div>
+    </form>
+    <div class="login-box">
+      <button class="login">Continue</button>
+    </div>
+    <div class="social-box">
+      <p>Or, Continue with</p>
+      <button class="facebook">Facebook</button>
+    </div>
+    <div class="policy">
+      <p>
+        By proceeding, you are confirming that you agree to our Terms and Conditions and Privacy Policy.
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,177 @@
+<div class="filter-section">
+  <div class="head">
+    <div>
+      <div class="title">Refine <a class="clear-all" href=""> Clear All</a></div>
+    </div>
+    <div class="chosen-box">
+      <div>
+        <a href="">
+          <span class="icon"></span>
+          <span class="selected-type">Category:</span> Clothing
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <ui-side-menu>
+      <ui-side-menu-group>
+        <div class="title">Category</div>
+        <ui-side-menu-sub>
+          <div class="type-box">
+            <div>
+              <label>
+                <input [uiInput] type="checkbox">
+                <span>Accessories</span>
+              </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Bags</span> </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox" checked>
+              <span>Clothing</span> </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Footwear</span> </label>
+            </div>
+          </div>
+        </ui-side-menu-sub>
+      </ui-side-menu-group>
+    </ui-side-menu>
+  </div>
+
+  <div>
+    <ui-side-menu>
+      <ui-side-menu-group>
+        <div class="title">Clothing Type</div>
+        <ui-side-menu-sub>
+          <div class="type-box">
+            <div>
+              <label>
+                <input [uiInput] type="checkbox">
+                <span>Coats and Jackets</span>
+              </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Dresses </span> </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Jeans </span> </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Knitwear </span> </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Leggings  </span> </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Shirts  </span> </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Shorts  </span> </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Knitwear </span> </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Knitwear </span> </label>
+            </div>
+          </div>
+        </ui-side-menu-sub>
+      </ui-side-menu-group>
+    </ui-side-menu>
+  </div>
+
+  <div>
+    <ui-side-menu>
+      <ui-side-menu-group>
+        <div class="title">Brand</div>
+        <ui-side-menu-sub *kitCollapse>
+          <div class="type-box">
+            <div>
+              <label>
+                <input [uiInput] type="checkbox">
+                <span>A.P.C.</span>
+              </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Alexander Wang</span> </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Barbour</span> </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Barbour</span> </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Barbour</span> </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Barbour</span> </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Barbour</span> </label>
+            </div>
+            <div><label>
+              <input [uiInput] type="checkbox">
+              <span>Barbour</span> </label>
+            </div>
+          </div>
+        </ui-side-menu-sub>
+      </ui-side-menu-group>
+    </ui-side-menu>
+  </div>
+
+  <div>
+    <div class="title">Size</div>
+    <div class="size-box">
+      <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'xs'">XS</button>
+      <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'s'">S</button>
+      <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'m'">M</button>
+      <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'l'">L</button>
+      <button [uiButton] [type]="'size'" [kitCheck] [(ngModel)]="size" [value]="'xl'">XL</button>
+    </div>
+  </div>
+
+  <div>
+    <div class="title">Color</div>
+    <div class="color-box">
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'1'"
+              [style.background]="'#ccc'"></button>
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'2'"
+              [style.background]="'#000C48'"></button>
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'3'"
+              [style.background]="'#883C73'"></button>
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'4'"
+              [style.background]="'#AC9934'"></button>
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'5'"
+              [style.background]="'#3A8D1A'"></button>
+      <button [uiButton] [type]="'color'" [kitCheck] [(ngModel)]="color" [value]="'6'"
+              [style.background]="'#51B07E'"></button>
+    </div>
+  </div>
+
+  <div>
+    <div class="title">Price</div>
+    <ui-slider [range]="true" [ngModel]="[10, 50]"></ui-slider>
+  </div>
+
+</div>
+

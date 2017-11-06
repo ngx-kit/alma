@@ -3,12 +3,17 @@ import { CommonModule } from '@angular/common';
 
 import { CheckoutRoutingModule } from './checkout-routing.module';
 import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
+import { UiModule } from '../ui/ui.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
-    CheckoutRoutingModule
+    CheckoutRoutingModule,
+    UiModule,
+    FormsModule,
   ],
-  declarations: [CheckoutPageComponent]
+  declarations: [CheckoutPageComponent],
 })
-export class CheckoutModule { }
+export class CheckoutModule {
+}

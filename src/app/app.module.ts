@@ -25,7 +25,6 @@ import { UiModule } from './ui/ui.module';
   ],
   declarations: [
     AppComponent,
-    ...cards,
   ],
   providers: [],
   bootstrap: [AppComponent],

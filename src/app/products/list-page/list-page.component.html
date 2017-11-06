@@ -1,6 +1,55 @@
-<p>
-  list-page works!
-</p>
+<div class="main-wrapper">
+  <div class="breadcrumbs">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li class="-active"><a href="">Womens</a></li>
+    </ul>
+  </div>
+  <div class="list-page-container">
+    <div class="filter">
+      <app-filters></app-filters>
+    </div>
+    <div class="main-content">
+      <div class="list-title">
+        <h2 class="title">Women's View All</h2>
+        <p class="results">1019 results</p>
+      </div>
+      <div class="search-result-options">
+        <app-sort></app-sort>
+        <nav class="pagination-box">
+          <a class="navigation-button previous"></a>
+          <div class="page-box">
+            <a class="page-number -active">1</a>
+            <a class="page-number">2</a>
+            <a class="page-number">3</a>
+          </div>
+          <a class="navigation-button next"></a>
+        </nav>
+      </div>
+      <div class="list-cards">
+        <app-card></app-card>
+        <app-card></app-card>
+        <app-card></app-card>
+        <app-card></app-card>
+        <app-card></app-card>
+        <app-card></app-card>
+        <app-card></app-card>
+        <app-card></app-card>
+      </div>
+      <nav class="pagination-box">
+        <a class="navigation-button previous"></a>
+        <div class="page-box">
+          <a class="page-number -active">1</a>
+          <a class="page-number">2</a>
+          <a class="page-number">3</a>
+        </div>
+        <a class="navigation-button next"></a>
+      </nav>
+    </div>
+
+  </div>
+</div>
+
 
 <a [routerLink]="[1]">View product</a>
 <a [routerLink]="[2]">View product</a>

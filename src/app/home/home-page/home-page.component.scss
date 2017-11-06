@@ -1,0 +1,140 @@
+.main-wrapper {
+  margin: 0 auto;
+  width: 1180px;
+}
+
+.banner {
+  align-items: center;
+  background: url("../../../assets/mountain.jpg");
+  display: flex;
+  height: 600px;
+  flex-direction: row;
+  margin: 20px 0;
+  width: 100%;
+
+}
+
+.slogan {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333434;
+  font-size: 44px;
+  line-height: 48px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.hot-offers, .trent-offers {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.trent-offers {
+  width: 80%;
+  .product {
+    width: 47%;
+  }
+  button {
+    margin-top: -20px;
+    width: 90%;
+  }
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  padding: 24px 16px;
+  .line {
+    flex-grow: 1;
+  }
+  hr {
+    border-top: 2px solid #333434;
+    margin: 26px 0;
+  }
+  .title {
+    text-align: center;
+    width: 20%;
+  }
+}
+
+.offers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  margin-bottom: 24px;
+  text-align: center;
+  width: 30%;
+  > div {
+    margin: 8px 0;
+  }
+}
+
+img {
+  background-color: #ECE8DF;
+  height: 330px;
+  width: 100%;
+}
+
+.sub-title {
+  font-size: 16px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+button {
+  background: transparent;
+  border: 2px solid #333434;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+}
+
+.shipping-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.element {
+  background-color: #F5F5F5;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 32px;
+  text-align: center;
+  width: 33%;
+}
+
+.subscribe {
+  background-color: #F5F5F5;
+  margin: 80px 0;
+  padding: 40px 0;
+
+}
+.subscribe-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .title{
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .join{
+    width: 25%;
+  }
+}

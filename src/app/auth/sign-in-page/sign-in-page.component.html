@@ -1,5 +1,30 @@
-<p>
-  sign-in-page works!
-</p>
-
+<div class="main-wrapper">
+  <div class="container">
+    <div class="login-panel">
+      <h2 class="title">Existing Customers</h2>
+        <form>
+          <label>Email address</label>
+          <input type="text" [uiInput] [(ngModel)]="inputModel">
+          <label>Password</label>
+          <input type="text" [uiInput] [(ngModel)]="inputModel">
+        </form>
+        <div class="forgotten-password">
+          <a href="">Forgotten your password?</a>
+        </div>
+        <div class="login-box">
+          <button class="login">Sign In</button>
+        </div>
+        <div class="social-box">
+          <p>Or, Continue with</p>
+          <button class="facebook">Facebook</button>
+        </div>
+    </div>
+    <div class="login-panel">
+      <h2 class="title">New to Alma?</h2>
+      <div class="login-box">
+        <button class="login">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
 <a [routerLink]="['../sign-up']">Sign up</a>

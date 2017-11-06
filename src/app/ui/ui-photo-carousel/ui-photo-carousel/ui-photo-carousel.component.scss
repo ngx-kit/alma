@@ -8,11 +8,12 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100px;
+  height: 100px;
   a {
+    text-align: center;
     margin-right: 10px;
     img {
       height: 100px;
-      width: 100px;
     }
     &.-active {
       box-shadow: 0 0 10px 5px rgba(245, 243, 243, 1);
