@@ -1,9 +1,13 @@
+@import "../../../params";
+
 :host {
-  margin: 50px 0;
+  margin: $grid*6 0;
 }
 
 .main-wrapper {
+  box-sizing: border-box;
   margin: 0 auto;
+  padding: 0 $grid;
   width: 1180px;
 }
 
@@ -13,25 +17,27 @@
 }
 
 .recently-viewed{
-  margin: 50px 0;
+  margin: $grid*6 0;
   .list-cards {
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
+    width: 100%;
     app-card{
-      width: 23%;
+      margin: $grid;
+      width: 270px;
       .product-photo {
-        height: 200px;
+        height: 300px;
       }
     }
   }
 }
 
 .product-preview {
-  border-right: 1px solid #e1e1e1;
-  padding-right: 48px;
+  border-right: 1px solid $MercuryColor;
+  flex-shrink: 0;
+  padding-right: $grid*8;
   width: 600px;
 }
 
@@ -39,42 +45,41 @@
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  padding-left: 42px;
-  width: 32%;
+  padding-left: $grid*5;
   > div {
     width: 100%;
   }
   .title {
     h3 {
-      margin: 6px 0 2px 0;
-      font-size: 26px;
+      font-size: 2rem;
+      margin: $grid 0 $grid/4 0;
     }
   }
   .sub-title {
     color: #CCCCCC;
-    font-size: 14px;
+    font-size: 1rem;
   }
   .price-box {
-    margin: 20px 0;
+    align-items: center;
     display: flex;
+    margin: $grid*2.5 0;
     flex-direction: row;
-    align-items: baseline;
     .price {
-      font-size: 24px;
-      margin-right: 30px;
+      font-size: 2rem;
+      margin-right: $grid*3.5;
     }
   }
   .color-box, .size-box {
     color: #CCCCCC;
     display: flex;
     flex-direction: row;
-    margin: 12px 0;
+    margin: $grid*1.5 0;
     p {
-      margin: 0 20px 0 0;
-      line-height: 24px;
+      margin: 0 $grid*2.5 0 0;
+      line-height: 2rem;
     }
     button {
-      margin-right: 10px;
+      margin-right: $grid;
     }
   }
   .size-box {
@@ -83,46 +88,45 @@
       width: 40px;
     }
     p {
-      line-height: 34px;
+      line-height: 2.6rem;
     }
   }
   .color-box {
     button {
       border-radius: 4px;
       height: 30px;
+      margin-right: $grid;
       width: 30px;
-      margin-right: 8px;
     }
   }
   .quantity, .add {
-    margin: 12px 0;
+    margin: $grid*1.5 0;
   }
 }
 
 h4 {
-  border-bottom: 1px solid #e1e1e1;
-  font-size: 17px;
-  margin-bottom: 16px;
-  padding-bottom: 6px;
+  border-bottom: 1px solid $MercuryColor;
+  font-size: 1.2rem;
+  margin-bottom: $grid*2;
+  padding-bottom: $grid*0.5;
   width: 100%;
 }
 
 p {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 table {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   th {
     text-align: left;
-    width: 130px;
     padding-left: 0;
+    width: 130px;
   }
-
   tr {
-    padding-top: 12px;
     display: block;
+    padding-top: $grid*1.5;
   }
 }

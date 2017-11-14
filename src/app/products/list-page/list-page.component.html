@@ -1,7 +1,7 @@
 <div class="main-wrapper">
   <div class="breadcrumbs">
     <ul>
-      <li><a href="">Home</a></li>
+      <li><a [routerLink]="['/home']">Home</a></li>
       <li class="-active"><a href="">Womens</a></li>
     </ul>
   </div>
@@ -27,14 +27,27 @@
         </nav>
       </div>
       <div class="list-cards">
+        <div class="card">
         <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
+        </div>
+        <div class="card">
+          <app-card></app-card>
+        </div>
+        <div class="card">
+          <app-card></app-card>
+        </div>
+        <div class="card">
+          <app-card></app-card>
+        </div>
+        <div class="card">
+          <app-card></app-card>
+        </div>
+        <div class="card">
+          <app-card></app-card>
+        </div>
+        <div class="card">
+          <app-card></app-card>
+        </div>
       </div>
       <nav class="pagination-box">
         <a class="navigation-button previous"></a>

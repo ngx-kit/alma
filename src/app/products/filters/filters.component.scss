@@ -1,10 +1,11 @@
+@import "../../../params";
+
 :host {
-  background-color: #ffffff;
   border-radius: 6px;
+  box-sizing: border-box;
   overflow: hidden;
   position: relative;
-  box-sizing: border-box;
-  padding: 15px 20px;
+  padding: $grid*2 $grid*2.5;
   width: 100%;
 }
 
@@ -15,32 +16,31 @@
       border-bottom: none;
     }
     .clear-all {
-      font-size: 13px;
+      font-size: 0.9rem;
       position: absolute;
       right: 0;
-      top: 14px;
+      top: 10px;
     }
     .chosen-box {
       > div {
-        margin-bottom: 10px;
+        margin-bottom: $grid;
       }
     }
     a {
-      color: #111;
+      color: $textColor;
       font-weight: 400;
-      font-size: 15px;
       text-decoration: none;
-      line-height: 20px;
+      font-size: 0.9rem;
     }
     .icon {
-      margin-right: 20px;
+      margin-right: $grid*3;
       &:before, &:after {
         position: absolute;
         content: "";
         height: 20px;
         width: 2px;
-        background-color: #333;
-        left: 4px;
+        background-color: $textColor;
+        left: 8px;
       }
       &:before {
         transform: rotate(45deg);
@@ -50,40 +50,40 @@
       }
     }
     .selected-type {
-      font-size: 15px;
-      color: #111;
+      font-size: 0.9rem;
+      color: $textColor;
       font-weight: 700;
     }
   }
 
   > div {
-    margin-bottom: 20px;
+    margin-bottom: $grid*2.5;
   }
   .title {
-    font-size: 19px;
+    font-size: 1.2rem;
     font-weight: 700;
-    color: #333;
-    line-height: 24px;
+    color: $textColor;
+    line-height: 1.9rem;
     margin-bottom: 10px;
-    padding: 10px 0;
-    border-bottom: 1px solid #eeeeee;
+    padding: $grid 0;
+    border-bottom: 1px solid $WhiteSmokeColor;
   }
   .type-box {
     overflow-y: auto;
     max-height: 185px;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 400;
-    color: #111;
+    color: $textColor;
     > div {
-      margin-bottom: 9px;
+      margin-bottom: $grid;
     }
     input {
       height: 16px;
-      margin-right: 12px;
+      margin-right: $grid*1.5;
       width: 16px;
       &:checked {
         &:after {
-          border-color: #5868D7;
+          border-color: $PurpleColor;
         }
       }
     }
@@ -94,7 +94,7 @@
     justify-content: space-between;
     button {
       height: 40px;
-      margin-right: 8px;
+      margin-right: $grid;
       width: 40px;
     }
   }
@@ -106,7 +106,7 @@
       border-radius: 4px;
       height: 30px;
       width: 30px;
-      margin-right: 8px;
+      margin-right: $grid;
     }
   }
 }

@@ -1,82 +1,86 @@
+@import "../../../params";
+
 :host {
-  margin: 50px 0;
+  margin: $grid*6 0;
 }
 
 .main-wrapper {
+  box-sizing: border-box;
   margin: 0 auto;
+  padding: 0 $grid;
   width: 1180px;
 }
 
 .instruction {
   align-items: center;
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
-  padding: 4px 0;
+  border-bottom: 1px solid $MercuryColor;
+  border-top: 1px solid $MercuryColor;
   display: flex;
   flex-direction: row;
+  padding: $grid/2 0;
   justify-content: space-between;
 }
 
 .required-field {
-  font-size: 11px;
+  font-size: 0.9rem;
 }
 
 .checkout-box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: $grid*3 0;
   width: 100%;
-  margin: 24px 0;
 }
 
 .customer-details {
-  margin-right: 14px;
+  margin-right: $grid*1.5;
   width: 70%;
 }
 
 section {
-  border-bottom: 1px solid #e1e1e1;
-  color: #666;
+  align-items: flex-start;
+  border-bottom: 1px solid $MercuryColor;
+  color: $CharcoalColor;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  padding: 12px 0;
+  padding: $grid*1.5 0;
 }
 
 .header {
   align-items: center;
   display: flex;
   flex-direction: row;
-  margin-right: 12px;
+  margin-right: $grid*1.5;
   width: 100px;
   strong {
     color: #aaa;
-    font-size: 38px;
-    margin-right: 20px;
+    font-size: 3rem;
+    margin-right: $grid*2.5;
   }
   span {
     font-weight: 700;
-    line-height: 18px;
+    line-height: 1.4rem;
   }
 }
 
 fieldset {
   border: 0;
+  flex-grow: 1;
   margin: 0;
   padding: 0;
-  flex-grow: 1
 }
 
 .field {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: $grid*1.5;
   width: 100%;
 }
 
 .label-wrap {
-  margin-right: 12px;
+  margin-right: $grid*1.5;
   text-align: right;
   width: 150px;
 }
@@ -96,7 +100,12 @@ label {
     flex-direction: row;
     justify-content: space-between;
     select {
-      width: 48%;
+      box-sizing: border-box;
+      margin-right: $grid;
+      width: 50%;
+      &:last-child{
+        margin-right: 0;
+      }
     }
   }
 }
@@ -107,84 +116,85 @@ label {
   .cost {
     color: #3eb14f;
     font-weight: 700;
+    margin-left: $grid*3.5;
     text-transform: uppercase;
-    margin-left: 28px;
   }
 }
 
 .radio {
-  margin-left: 60px;
+  margin-left: $grid*7.5;
 }
 
 .submit-button {
+  margin: $grid*5 0;
   text-align: center;
-  margin: 40px 0;
 }
 
 .submit {
-  line-height: 48px;
-  padding: 0 24px;
-  background: #333333;
+  background: $textColor;
   border: none;
   color: #ffffff;
-  text-transform: uppercase;
   font-weight: 400;
+  line-height: 3.6rem;
+  padding: 0 $grid*3;
+  text-transform: uppercase;
 }
 
 .order-summary {
-  border: 1px solid #ededed;
+  border: 1px solid $MercuryColor;
   width: 280px;
   .header {
-    width: 100%;
     box-sizing: border-box;
-    background: #EDEDED;
-    padding: 12px;
+    background: $MercuryColor;
     font-weight: 700;
+    padding: $grid*1.5;
+    width: 100%;
   }
 
 }
 
 .basket {
-  width: 100%;
-  padding: 12px;
   box-sizing: border-box;
+  padding: $grid*1.5;
+  width: 100%;
 }
 
 .basket-table {
   border: 0;
   border-collapse: collapse;
-  width: 100%;
   text-align: center;
+  width: 100%;
   .description {
+    padding-right: $grid/2;
     text-align: left;
     width: 70%;
-    padding-right: 4px;
     .container {
       align-items: center;
-      width: 100%;
       display: flex;
       flex-direction: row;
+      width: 100%;
     }
     .product-photo {
       flex-shrink: 0;
-      margin-right: 8px;
-      width: 70px;
       height: 70px;
+      margin-right: $grid;
       text-align: center;
+      width: 70px;
       img {
-        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
       }
     }
   }
   td {
-    padding: 8px 0;
-    border-bottom: 1px solid #e1e1e1;
+    padding: $grid 0;
+    border-bottom: 1px solid $MercuryColor;
   }
   tfoot {
-    text-align: center;
-    padding: 14px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1.2rem;
+    padding: $grid*1.5;
+    text-align: center;
     td{
       border-bottom: none;
     }

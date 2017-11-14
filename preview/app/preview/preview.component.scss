@@ -1,3 +1,5 @@
+@import "../../../src/params";
+
 .main-wrapper {
   max-width: 1600px;
   margin: 0 auto;
@@ -14,7 +16,7 @@
   background-size: cover;
   color: #D7F9FB;
   text-align: center;
-  padding-top: 40px;
+  padding-top: $grid * 5;
   h1 {
     font-size: 150px;
   }
@@ -31,7 +33,7 @@
     margin: 0 auto;
     font-weight: 700;
     padding-bottom: 30px;
-    border-bottom: 1px solid #405489;
+    border-bottom: 1px solid $purpleColor;
     font-size: 20px;
   }
   .sub-title {
@@ -41,7 +43,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 1.2rem;
     font-weight: 300;
     span {
       color: #7BFBFE;
@@ -59,7 +61,7 @@
     a {
       color: #7BFBFE;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 1.2rem;
     }
   }
 }

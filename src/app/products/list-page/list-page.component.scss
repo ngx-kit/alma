@@ -1,13 +1,17 @@
+@import "../../../params";
+
 :host {
 }
 
 .main-wrapper {
+  box-sizing: border-box;
   margin: 0 auto;
+  padding: 0 $grid;
   width: 1180px;
 }
 
 .breadcrumbs {
-  margin: 20px auto;
+  margin: $grid*2.5 auto;
   ul {
     padding-left: 0;
     li {
@@ -20,7 +24,7 @@
         color: inherit;
         display: inline-block;
         margin: 0;
-        padding: 0 4px;
+        padding: 0 $grid/2;
       }
       &:last-child {
         &:after {
@@ -29,26 +33,17 @@
       }
     }
     a {
-      color: #7b7d8b;
-      font-size: 14px;
+      color: $StormGreyColor;
+      font-size: 1rem;
       text-decoration: none;
     }
     .-active {
       a {
-        color: #333;
+        color: $textColor;
         font-weight: 700;
       }
     }
   }
-}
-
-.filter {
-  margin: 0 50px 0 0;
-  width: 280px;
-}
-
-.main-content {
-  flex-grow: 1;
 }
 
 .list-page-container {
@@ -57,16 +52,25 @@
   justify-content: space-between;
 }
 
+.filter {
+  margin: 0 $grid*6 0 0;
+  width: 280px;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
 .list-title {
   align-items: center;
   display: flex;
   flex-direction: row;
-  font-size: 18px;
+  font-size: 1.4rem;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: $grid*1.5 0;
   text-transform: uppercase;
   h2 {
-    font-size: 18px;
+    font-size: 1.4rem;
   }
 }
 
@@ -75,7 +79,83 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: $grid*2.5 0;
+}
+
+.pagination-box {
+  display: flex;
+  flex-direction: row;
+  .navigation-button {
+    border-color: $MercuryColor;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    color: $MercuryColor;
+    font-size: 0.9rem;
+    padding: $grid $grid*2;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    &.previous {
+      &:before {
+        content: "";
+        border: 2px solid #333;
+        border-top: transparent;
+        border-right: transparent;
+        display: inline-block;
+        margin-right: 0;
+        position: relative;
+        right: -1px;
+        padding: $grid/2;
+        transform: rotate(45deg);
+        top: 0;
+      }
+    }
+    &.next {
+      &:after {
+        content: "";
+        display: inline-block;
+        border: 2px solid #333;
+        border-top: transparent;
+        border-right: transparent;
+        left: -1px;
+        margin-right: 0;
+        padding: 3px;
+        position: relative;
+        top: 0;
+        transform: rotate(225deg);
+      }
+    }
+  }
+  .page-box {
+    display: inline-block;
+    .page-number {
+      background-color: #fff;
+      border-color: $MercuryColor;
+      border-left-width: 1px;
+      border-top-width: 1px;
+      border-bottom-width: 1px;
+      border-style: solid;
+      box-sizing: border-box;
+      border-right: none;
+      border-radius: 0;
+      display: inline-block;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-left: -3px;
+      padding: 9px 17px;
+      text-align: center;
+      vertical-align: middle;
+      width: auto;
+      &.-active {
+        background: $MercuryColor;
+      }
+    }
+  }
 }
 
 .list-cards {
@@ -85,83 +165,8 @@
   justify-content: flex-start;
 }
 
-.pagination-box {
-  display: flex;
-  flex-direction: row;
-  .navigation-button {
-    border-color: #e1e1e1;
-    color: #e1e1e1;
-    border-left-width: 1px;
-    border-top-width: 1px;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-style: solid;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 9px 17px;
-    text-align: center;
-    vertical-align: middle;
-    display: inline-block;
-    &.previous {
-      &:before {
-        content: "";
-        transform: rotate(45deg);
-        border: 2px solid #333;
-        border-top-width: 2px;
-        border-top: transparent;
-        border-right: transparent;
-        display: inline-block;
-        position: relative;
-        top: 0;
-        right: -1px;
-        padding: 3px;
-        margin-right: 0;
-      }
-    }
-    &.next {
-      &:after {
-        content: "";
-        transform: rotate(225deg);
-        border: 2px solid #333;
-        border-top-width: 2px;
-        border-top: transparent;
-        border-right: transparent;
-        display: inline-block;
-        position: relative;
-        top: 0;
-        left: -1px;
-        padding: 3px;
-        margin-right: 0;
-      }
-    }
-  }
-  .page-box {
-    display: inline-block;
-    .page-number {
-      background-color: #fff;
-      border-color: #e1e1e1;
-      border-left-width: 1px;
-      border-top-width: 1px;
-      border-bottom-width: 1px;
-      border-style: solid;
-      box-sizing: border-box;
-      border-right: none;
-      border-radius: 0;
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 700;
-      cursor: pointer;
-      line-height: 20px;
-      margin-left: -3px;
-      padding: 9px 17px;
-      text-align: center;
-      vertical-align: middle;
-      width: auto;
-    &.-active{
-      background: #E1E1E1;
-    }
-    }
-  }
+.card {
+  box-sizing: border-box;
+  margin: $grid;
+  width: 270px;
 }

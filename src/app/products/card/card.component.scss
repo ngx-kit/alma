@@ -1,25 +1,28 @@
+@import "../../../params";
+
 :host {
-  width: 31%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin: 0 10px 30px 10px;
-  box-sizing: border-box;
+  width: 100%;
 }
 
 .product-photo {
-  text-align: center;
-  width: 100%;
+  align-items: center;
   background-color: #F5F5F5;
+  box-sizing: border-box;
+  display: flex;
   height: 300px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: $grid*2;
+  padding: $grid*2;
+  width: 100%;
   img {
+    max-height: 100%;
     max-width: 100%;
   }
 }
-
 
 .product-info {
   box-sizing: border-box;
@@ -27,31 +30,30 @@
   width: 100%;
   .title {
     h3 {
-      font-size: 16px;
+      font-size: 1.2rem;
     }
   }
   .sub-title {
-    font-size: 14px;
+    font-size: 1rem;
   }
   .price-box {
-    margin: 30px 0;
+    align-items: baseline;
+    color: $CharcoalColor;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: baseline;
-    color: #444444;
+    margin: $grid*2 0;
     p {
       margin: 0;
     }
     .old-price {
+      color: $StormGreyColor;
+      margin-right: $grid;
       text-decoration: line-through;
-      color: #CCCCCC;
-      margin-right: 10px;
     }
     .new-price {
-      font-size: 18px;
+      font-size: 1.4rem;
       font-weight: 700;
-
     }
   }
 }

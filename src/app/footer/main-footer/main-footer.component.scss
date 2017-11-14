@@ -1,17 +1,15 @@
+@import "../../../params";
+
+
 :host {
   background-color: #333434;
-  color: #e7e7e7;
+  color: $WhiteSmokeColor;
 }
 
-h4 {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 14px;
-  text-transform: uppercase;
-}
-
-.content-inner {
+.main-wrapper {
+  box-sizing: border-box;
   margin: 0 auto;
+  padding: 0 $grid;
   width: 1180px;
 }
 
@@ -19,20 +17,28 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 24px 0;
+  padding: $grid*3 0;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: $grid*2;
+  text-transform: uppercase;
 }
 
 ul {
   list-style: none;
   li {
-    font-size: 14px;
-    margin: 8px 0;
+    font-size: 1rem;
+    margin: $grid 0;
     a{
-      color: #e7e7e7;
+      color: $WhiteSmokeColor;
       text-decoration: none;
     }
   }
 }
+
 .copyright{
   align-items: flex-end;
   display: flex;
