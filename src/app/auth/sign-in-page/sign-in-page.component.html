@@ -4,9 +4,9 @@
       <h2 class="title">Existing Customers</h2>
         <form>
           <label>Email address</label>
-          <input type="text" [uiInput] [(ngModel)]="inputModel">
+          <input [uiInput] name="email" [(ngModel)]="inputModel">
           <label>Password</label>
-          <input type="text" [uiInput] [(ngModel)]="inputModel">
+          <input type="password" [uiInput] name="password" [(ngModel)]="inputModel">
         </form>
         <div class="forgotten-password">
           <a href="">Forgotten your password?</a>

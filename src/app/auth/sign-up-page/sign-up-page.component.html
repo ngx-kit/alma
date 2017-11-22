@@ -4,23 +4,23 @@
     <form>
       <div>
         <label>Full Name:</label>
-        <input type="text" [uiInput] [(ngModel)]="inputModel">
+        <input [uiInput] name="full-name" [(ngModel)]="inputModel">
       </div>
       <div>
         <label>Email address</label>
-        <input type="text" [uiInput] [(ngModel)]="inputModel">
+        <input [uiInput] name="email" [(ngModel)]="inputModel">
       </div>
       <div>
         <label>Confirm Email:</label>
-        <input type="text" [uiInput] [(ngModel)]="inputModel">
+        <input [uiInput] name="confirm-email" [(ngModel)]="inputModel">
       </div>
       <div>
         <label>Password:</label>
-        <input type="text" [uiInput] [(ngModel)]="inputModel">
+        <input type="password" [uiInput] name="password" [(ngModel)]="inputModel">
       </div>
       <div>
         <label>Confirm Password:</label>
-        <input type="text" [uiInput] [(ngModel)]="inputModel">
+        <input type="password" [uiInput] name="confirm-password" [(ngModel)]="inputModel">
       </div>
     </form>
     <div class="login-box">
