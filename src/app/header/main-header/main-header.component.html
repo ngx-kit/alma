@@ -12,21 +12,26 @@
       </div>
     </div>
     <div class="navigation">
-      <div class="menu">
+      <div class="menu" (mouseover)="displayMenu=true">
         MENU
       </div>
       <div class="account-wrap">
-          <div>
-            <a href="">
-              My Account
-            </a>
-          </div>
-          <div>
-            <a href="">
-              My Bag
-            </a>
-          </div>
+        <div>
+          <a href="">
+            My Account
+          </a>
+        </div>
+        <div>
+          <a href="">
+            My Bag
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </header>
+
+<app-main-menu *kitOverlay="displayMenu"
+               [kitOverlayPosition]="{type: 'dropdown', position: 'bottom', anchor: menuAnchor}"
+               (mouseleave)="displayMenu = false">
+</app-main-menu>

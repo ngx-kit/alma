@@ -1,0 +1,15 @@
+@import "../../../params";
+
+:host {
+  background: $WhiteSmokeColor;
+  border-bottom: 2px solid $MercuryColor;
+  display: block;
+  padding: $grid * 2 0;
+}
+
+.main-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 $grid;
+  width: 1180px;
+}
