@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
-import { KitSlideHostService } from '@ngx-kit/core';
+import { KitSlideHostService, KitSlideId } from '@ngx-kit/core';
 import 'rxjs/add/observable/from';
 import 'rxjs/add/observable/interval';
 import 'rxjs/add/observable/merge';
@@ -20,7 +20,7 @@ import { UiPhotoCarouselPhoto } from '../meta';
   ],
 })
 export class UiPhotoCarouselComponent implements OnInit {
-  active$: Observable<number>;
+  active$: Observable<KitSlideId>;
 
   /**
    * Slide auto-changing interval.
