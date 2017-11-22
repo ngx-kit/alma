@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { KitIconsRegistryService } from '@ngx-kit/ngx-kit';
+import { KitIconsRegistryService } from '@ngx-kit/core';
 
 @Component({
   selector: 'app-root',

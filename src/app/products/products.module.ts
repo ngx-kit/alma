@@ -10,7 +10,7 @@ import { UiModule } from '../ui/ui.module';
 import { FiltersComponent } from './filters/filters.component';
 import { SortComponent } from './sort/sort.component';
 import { CardComponent } from './card/card.component';
-import { KitFullModule } from '@ngx-kit/ngx-kit';
+import { KitFullModule } from '@ngx-kit/core';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({

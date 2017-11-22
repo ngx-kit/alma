@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Inject, Input, OnChanges, } from '@angular/core';
-import { kitInputMiddleware, KitInputMiddleware, KitLimitMiddleware } from '@ngx-kit/ngx-kit';
+import { kitInputMiddleware, KitInputMiddleware, KitLimitMiddleware } from '@ngx-kit/core';
 
 @Component({
   // tslint:disable-next-line
