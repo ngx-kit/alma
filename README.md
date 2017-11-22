@@ -1,5 +1,7 @@
 # UiAlma
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ngx-kit/alma.svg)](https://greenkeeper.io/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
 
 ## Development server
