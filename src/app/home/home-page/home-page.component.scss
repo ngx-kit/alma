@@ -1,14 +1,8 @@
 @import "../../../params";
+@import "../../../common";
 
 :host {
   margin: $grid*5 0;
-}
-
-.main-wrapper {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 $grid;
-  width: 1180px;
 }
 
 .banner {
@@ -85,7 +79,7 @@
     align-items: center;
     box-sizing: border-box;
     padding: $grid*2;
-    background-color: $SatinColor;
+    background-color: $satinColor;
     width: 100%;
     height: 330px;
     display: flex;
@@ -126,7 +120,7 @@ button {
 }
 
 .element {
-  background-color: $WhiteSmokeColor;
+  background-color: $whiteSmokeColor;
   box-sizing: border-box;
   font-size: 1.2rem;
   font-weight: 700;
@@ -138,7 +132,7 @@ button {
 }
 
 .subscribe {
-  background-color: $WhiteSmokeColor;
+  background-color: $whiteSmokeColor;
   margin: $grid*10 0;
   padding: $grid*5 0;
 

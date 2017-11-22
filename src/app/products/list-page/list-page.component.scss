@@ -1,13 +1,7 @@
 @import "../../../params";
+@import "../../../common";
 
 :host {
-}
-
-.main-wrapper {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 $grid;
-  width: 1180px;
 }
 
 .breadcrumbs {
@@ -33,7 +27,7 @@
       }
     }
     a {
-      color: $StormGreyColor;
+      color: $stormGreyColor;
       font-size: 1rem;
       text-decoration: none;
     }
@@ -86,14 +80,14 @@
   display: flex;
   flex-direction: row;
   .navigation-button {
-    border-color: $MercuryColor;
+    border-color: $mercuryColor;
     border-left-width: 1px;
     border-top-width: 1px;
     border-right-width: 1px;
     border-bottom-width: 1px;
     border-style: solid;
     box-sizing: border-box;
-    color: $MercuryColor;
+    color: $mercuryColor;
     font-size: 0.9rem;
     padding: $grid $grid*2;
     text-align: center;
@@ -134,7 +128,7 @@
     display: inline-block;
     .page-number {
       background-color: #fff;
-      border-color: $MercuryColor;
+      border-color: $mercuryColor;
       border-left-width: 1px;
       border-top-width: 1px;
       border-bottom-width: 1px;
@@ -152,7 +146,7 @@
       vertical-align: middle;
       width: auto;
       &.-active {
-        background: $MercuryColor;
+        background: $mercuryColor;
       }
     }
   }

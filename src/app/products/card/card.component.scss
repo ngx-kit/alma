@@ -38,7 +38,7 @@
   }
   .price-box {
     align-items: baseline;
-    color: $CharcoalColor;
+    color: $charcoalColor;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -47,7 +47,7 @@
       margin: 0;
     }
     .old-price {
-      color: $StormGreyColor;
+      color: $stormGreyColor;
       margin-right: $grid;
       text-decoration: line-through;
     }

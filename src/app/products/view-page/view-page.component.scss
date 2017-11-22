@@ -1,14 +1,8 @@
 @import "../../../params";
+@import "../../../common";
 
 :host {
   margin: $grid*6 0;
-}
-
-.main-wrapper {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 $grid;
-  width: 1180px;
 }
 
 .product-box {
@@ -35,7 +29,7 @@
 }
 
 .product-preview {
-  border-right: 1px solid $MercuryColor;
+  border-right: 1px solid $mercuryColor;
   flex-shrink: 0;
   padding-right: $grid*8;
   width: 600px;
@@ -105,7 +99,7 @@
 }
 
 h4 {
-  border-bottom: 1px solid $MercuryColor;
+  border-bottom: 1px solid $mercuryColor;
   font-size: 1.2rem;
   margin-bottom: $grid*2;
   padding-bottom: $grid*0.5;

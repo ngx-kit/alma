@@ -1,20 +1,14 @@
 @import "../../../params";
+@import "../../../common";
 
 :host {
   margin: $grid*6 0;
 }
 
-.main-wrapper {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 $grid;
-  width: 1180px;
-}
-
 .instruction {
   align-items: center;
-  border-bottom: 1px solid $MercuryColor;
-  border-top: 1px solid $MercuryColor;
+  border-bottom: 1px solid $mercuryColor;
+  border-top: 1px solid $mercuryColor;
   display: flex;
   flex-direction: row;
   padding: $grid/2 0;
@@ -40,8 +34,8 @@
 
 section {
   align-items: flex-start;
-  border-bottom: 1px solid $MercuryColor;
-  color: $CharcoalColor;
+  border-bottom: 1px solid $mercuryColor;
+  color: $charcoalColor;
   display: flex;
   flex-direction: row;
   padding: $grid*1.5 0;
@@ -141,11 +135,11 @@ label {
 }
 
 .order-summary {
-  border: 1px solid $MercuryColor;
+  border: 1px solid $mercuryColor;
   width: 280px;
   .header {
     box-sizing: border-box;
-    background: $MercuryColor;
+    background: $mercuryColor;
     font-weight: 700;
     padding: $grid*1.5;
     width: 100%;
@@ -188,7 +182,7 @@ label {
   }
   td {
     padding: $grid 0;
-    border-bottom: 1px solid $MercuryColor;
+    border-bottom: 1px solid $mercuryColor;
   }
   tfoot {
     font-weight: 700;

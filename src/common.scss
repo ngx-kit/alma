@@ -1,0 +1,8 @@
+@import "params";
+
+.main-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 $grid;
+  width: 1180px;
+}

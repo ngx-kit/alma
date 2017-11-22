@@ -1,18 +1,12 @@
 @import "../../../params";
+@import "../../../common";
 
 :host {
   margin: $grid*6 0;
 }
 
-.main-wrapper {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 $grid;
-  width: 1180px;
-}
-
 .login-panel {
-  border: 1px solid $MercuryColor;
+  border: 1px solid $mercuryColor;
   box-sizing: border-box;
   margin: 0 auto;
   padding: $grid*2.5;

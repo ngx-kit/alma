@@ -1,17 +1,11 @@
 @import "../../../params";
+@import "../../../common";
 
 :host {
   margin: $grid*3.5 0 $grid*1.5;
-  border-bottom: 2px solid $MercuryColor;
+  border-bottom: 2px solid $mercuryColor;
   color: $textColor;
   text-transform: uppercase;
-}
-
-.main-wrapper {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 $grid;
-  width: 1180px;
 }
 
 .head {

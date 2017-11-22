@@ -1,16 +1,9 @@
 @import "../../../params";
-
+@import "../../../common";
 
 :host {
   background-color: #333434;
-  color: $WhiteSmokeColor;
-}
-
-.main-wrapper {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 $grid;
-  width: 1180px;
+  color: $whiteSmokeColor;
 }
 
 .footer {
@@ -33,7 +26,7 @@ ul {
     font-size: 1rem;
     margin: $grid 0;
     a{
-      color: $WhiteSmokeColor;
+      color: $whiteSmokeColor;
       text-decoration: none;
     }
   }

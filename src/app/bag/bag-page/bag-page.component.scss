@@ -1,14 +1,8 @@
 @import "../../../params";
+@import "../../../common";
 
 :host {
   margin: $grid*5 0;
-}
-
-.main-wrapper {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 $grid;
-  width: 1180px;
 }
 
 .basket-table {
@@ -20,8 +14,8 @@
   font-size: 1rem;
   th {
     padding: 1em;
-    border-top: 1px solid $MercuryColor;
-    border-bottom: 1px solid $MercuryColor;
+    border-top: 1px solid $mercuryColor;
+    border-bottom: 1px solid $mercuryColor;
     text-transform: uppercase;
     font-size: 1rem;
   }
@@ -57,7 +51,7 @@
     font-weight: 700;
   }
   td {
-    border-bottom: 1px solid $MercuryColor;
+    border-bottom: 1px solid $mercuryColor;
     padding: $grid*1.5;
   }
   .total-label {
