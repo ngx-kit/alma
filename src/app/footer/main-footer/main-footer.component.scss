@@ -9,6 +9,7 @@
 .footer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: $grid*3 0;
 }
@@ -33,7 +34,8 @@ ul {
 }
 
 .copyright{
-  align-items: flex-end;
   display: flex;
+  justify-content: center;
   height: 100%;
+  width: 100%;
 }

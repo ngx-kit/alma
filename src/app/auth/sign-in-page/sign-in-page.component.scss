@@ -73,3 +73,14 @@ input {
   line-height: 3.7rem;
   padding: 0 $grid*3;
 }
+@media (max-width: 700px) {
+.container{
+  align-items: inherit;
+  flex-direction: column;
+}
+  .login-panel{
+    flex-grow: 1;
+    margin: $grid*2 0;
+    width: auto;
+  }
+}

@@ -16,18 +16,46 @@
   text-align: right;
   > div {
     box-sizing: border-box;
-    width: 33%;
   }
 }
 
 .logo {
   font-size: 3.9rem;
+  flex-shrink: 0;
   letter-spacing: 12px;
   text-align: left;
 }
 
+.search-utilities {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
 .currency {
   padding-right: $grid*10;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  width: 360px;
+  input {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    height: 44px;
+    padding: 0 $grid*1.5;
+    width: 230px;
+  }
+  button {
+    background: #333;
+    padding: $grid*1.5 $grid*2;
+    color: #fff;
+    border: 1px solid #333;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+  }
 }
 
 .navigation {
@@ -47,5 +75,35 @@
   a {
     color: $textColor;
     text-decoration: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .currency {
+    padding-right: $grid*2;
+  }
+  .search {
+    width: auto;
+    input {
+      height: 33px;
+    }
+    button {
+      padding: $grid $grid*2;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .head {
+  flex-direction: column;
+  }
+  .search-utilities{
+    margin-top: $grid*3;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .search{
+    input{
+      width: 150px;
+    }
   }
 }

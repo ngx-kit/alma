@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700|Roboto+Slab:400,700');
 
 html {
+  font-size: 16px;
   height: 100%;
 }
 
@@ -11,8 +12,16 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Roboto';
-  font-size: 13px;
+  font-size: 16px;
   margin: 0;
   min-height: 100%;
   padding: 0;
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 13px;
+  }
+  body{
+    font-size: 13px;
+  }
 }

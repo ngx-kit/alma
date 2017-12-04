@@ -46,7 +46,7 @@ section {
   display: flex;
   flex-direction: row;
   margin-right: $grid*1.5;
-  width: 100px;
+  width: 120px;
   strong {
     color: #aaa;
     font-size: 3rem;
@@ -70,7 +70,6 @@ fieldset {
   display: flex;
   flex-direction: row;
   margin-bottom: $grid*1.5;
-  width: 100%;
 }
 
 .label-wrap {
@@ -194,4 +193,30 @@ label {
     }
   }
 }
+@media (max-width: 900px) {
+  .checkout-box{
+    flex-direction: column;
+  }
+  .customer-details{
+    width: 100%;
+  }
+  .order-summary{
+    width: 100%;
+  }
+}
 
+@media (max-width: 600px) {
+  section{
+    align-items: inherit;
+    flex-direction: column;
+  }
+  .label-wrap{
+    flex-shrink: 0;
+    text-align: left;
+    width: 110px;
+  }
+  .container{
+    flex-grow: 1;
+    width: auto;
+  }
+}

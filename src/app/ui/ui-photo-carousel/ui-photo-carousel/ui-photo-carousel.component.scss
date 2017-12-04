@@ -27,3 +27,25 @@
   position: relative;
   flex-grow: 1;
 }
+
+@media (max-width: 900px) {
+  :host {
+    flex-direction: column;
+  }
+  .thumbs {
+    flex-direction: row;
+    order: 2;
+  }
+}
+
+@media (max-width: 800px) {
+  .thumbs {
+    height: 60px;
+    width: 60px;
+    a{
+      img {
+        height: 60px;
+      }
+    }
+  }
+}

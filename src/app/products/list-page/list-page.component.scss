@@ -161,6 +161,40 @@
 
 .card {
   box-sizing: border-box;
-  margin: $grid;
-  width: 270px;
+  padding: $grid;
+  width: 33%;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .list-page-container {
+    flex-direction: column;
+  }
+  .filter {
+    display: none;
+  }
+  .card {
+    width: 33%;
+  }
+}
+
+@media (max-width: 800px) {
+  .card{
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .card{
+    width: 100%;
+  }
+  .pagination-box{
+    &.-top{
+      display: none;
+    }
+  }
 }

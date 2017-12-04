@@ -1,23 +1,31 @@
-:host{
+:host {
   border: 1px solid #CCCCCC;
   padding: 6px 8px;
   border-radius: 4px;
   width: 95px;
 
 }
-button{
+
+button {
   background: transparent;
   border: none;
-  &:focus{
+  &:focus {
     outline: none;
   }
 }
-input{
+
+input {
   background: transparent;
   width: 50px;
   border: none;
   text-align: center;
-  &:focus{
+  &:focus {
     outline: none;
+  }
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 16px;
   }
 }

@@ -4,8 +4,23 @@
   justify-content: center;
 }
 
-
 img {
   max-width: 100%;
   height: 600px;
+}
+
+@media (max-width: 1200px) {
+  img {
+    height: 450px;
+  }
+}
+@media (max-width: 900px) {
+  img {
+    height: 400px;
+  }
+}
+@media (max-width: 800px) {
+  img {
+    height: 300px;
+  }
 }
