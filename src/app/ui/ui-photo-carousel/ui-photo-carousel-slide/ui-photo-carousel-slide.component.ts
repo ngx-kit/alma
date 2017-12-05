@@ -54,7 +54,7 @@ export class UiPhotoCarouselSlideComponent implements OnDestroy {
   private destroy$ = new Subject<void>();
 
   constructor(private host: KitSlideHostService) {
-    this.host.direction$
+    this.host.directionChanges
         .takeUntil(this.destroy$)
         .subscribe(d => {
           this.slideTrigger = d;

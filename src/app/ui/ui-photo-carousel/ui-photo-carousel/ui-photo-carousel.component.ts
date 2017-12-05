@@ -20,7 +20,7 @@ import { UiPhotoCarouselPhoto } from '../meta';
   ],
 })
 export class UiPhotoCarouselComponent implements OnInit {
-  active$: Observable<KitSlideId>;
+  active: Observable<KitSlideId>;
 
   /**
    * Slide auto-changing interval.
@@ -33,7 +33,7 @@ export class UiPhotoCarouselComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.active$ = this.host.active$;
+    this.active = this.host.activeChanges;
   }
 
   activate(index: number) {

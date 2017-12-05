@@ -10,14 +10,14 @@ import { UiModule } from '../ui/ui.module';
 import { FiltersComponent } from './filters/filters.component';
 import { SortComponent } from './sort/sort.component';
 import { CardComponent } from './card/card.component';
-import { KitFullModule } from '@ngx-kit/core';
+import { KitModule } from '@ngx-kit/core';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    KitFullModule,
+    KitModule,
     ProductsRoutingModule,
     UiModule,
   ],
