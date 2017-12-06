@@ -1,7 +1,7 @@
 <div class="main-wrapper">
   <div class="product-box">
     <div class="product-preview">
-      <ui-photo-carousel [photos]="photos"></ui-photo-carousel>
+      <ui-photo-carousel [photos]="product.photos"></ui-photo-carousel>
       <div>
         <h4>Description</h4>
         <p> ‘Florence’ midi dress from premium Australian label, Bec & Bridge. Forming a fluid bodycon fit, the
@@ -46,11 +46,11 @@
       </div>
     </div>
     <div class="product-info">
-      <div class="title"><h3>Product name</h3></div>
-      <div class="sub-title">More about product</div>
+      <div class="title"><h3>{{ product.title }}</h3></div>
+      <div class="sub-title">{{ product.description }}</div>
       <div class="price-box">
         <div class="price">
-          $830
+          {{ product.price }}$
         </div>
         <div class="rating">
           <ui-rating [value]="3"></ui-rating>
@@ -91,11 +91,7 @@
   <div class="recently-viewed">
     <h4>Recently viewed:</h4>
     <div class="list-cards">
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
+      <app-card *ngFor="let product of recent" [product]="product"></app-card>
     </div>
   </div>
 </div>
-

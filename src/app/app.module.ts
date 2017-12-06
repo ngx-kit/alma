@@ -6,6 +6,7 @@ import { KitOverlayModule, KitPlatformBrowserModule, KitRootModule } from '@ngx-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
+import { DataService } from './data/data.service';
 import { FooterModule } from './footer/footer.module';
 import { HeaderModule } from './header/header.module';
 import { UiModule } from './ui/ui.module';
@@ -27,7 +28,9 @@ import { UiModule } from './ui/ui.module';
   declarations: [
     AppComponent,
   ],
-  providers: [],
+  providers: [
+    DataService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {

@@ -27,26 +27,8 @@
         </nav>
       </div>
       <div class="list-cards">
-        <div class="card">
-        <app-card></app-card>
-        </div>
-        <div class="card">
-          <app-card></app-card>
-        </div>
-        <div class="card">
-          <app-card></app-card>
-        </div>
-        <div class="card">
-          <app-card></app-card>
-        </div>
-        <div class="card">
-          <app-card></app-card>
-        </div>
-        <div class="card">
-          <app-card></app-card>
-        </div>
-        <div class="card">
-          <app-card></app-card>
+        <div *ngFor="let product of products" class="card">
+          <app-card [product]="product"></app-card>
         </div>
       </div>
       <nav class="pagination-box">
