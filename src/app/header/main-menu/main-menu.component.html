@@ -1,9 +1,49 @@
-<div class="main-wrapper">
-  <ul>
-    <li><a [routerLink]="['/']">Home</a></li>
-    <li><a [routerLink]="['/products']">Products</a></li>
-    <li><a [routerLink]="['/bag']">Bag</a></li>
-    <li><a [routerLink]="['/checkout']">Checkout</a></li>
-    <li><a [routerLink]="['/auth/sign-in']">Sign-in</a></li>
-  </ul>
+<ul>
+  <li><a (click)="activate(1)" (mouseover)="activate(1)">Women</a></li>
+  <li><a (click)="activate(2)" (mouseover)="activate(2)">Men</a></li>
+  <li><a (click)="activate(3)" (mouseover)="activate(3)">Baby&Kids</a></li>
+  <li><a (click)="activate(4)" (mouseover)="activate(4)">Living</a></li>
+  <li><a (click)="activate(5)" (mouseover)="activate(5)">Gifting</a></li>
+  <li><a (click)="activate(6)" (mouseover)="activate(6)">SALE</a></li>
+</ul>
+
+<div *kitOverlay="displayMenu"
+     [kitOverlayPosition]="{type: 'dropdown', position: 'bottom', anchor: menuAnchor}"
+     [@fade]
+     class="sub"
+     (mouseleave)="displayMenu = false"
+     (kitOutsideClick)="displayMenu = false">
+  <div class="main-wrapper">
+    <div *kitSlide="1"
+         [@slide]="slideDirection | async"
+         class="section">
+      <a routerLink="/products">Products</a>
+      <a routerLink="/products/1">View Product</a>
+    </div>
+    <div *kitSlide="2"
+         [@slide]="slideDirection | async"
+         class="section">
+      22222
+    </div>
+    <div *kitSlide="3"
+         [@slide]="slideDirection | async"
+         class="section">
+      3333
+    </div>
+    <div *kitSlide="4"
+         [@slide]="slideDirection | async"
+         class="section">
+      4444
+    </div>
+    <div *kitSlide="5"
+         [@slide]="slideDirection | async"
+         class="section">
+      5555
+    </div>
+    <div *kitSlide="6"
+         [@slide]="slideDirection | async"
+         class="section">
+      6666
+    </div>
+  </div>
 </div>

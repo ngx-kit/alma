@@ -1,40 +1,27 @@
 <header>
-  <div class="main-wrapper">
-    <div class="head">
-      <div class="logo">
-        ALMA
+  <div class="top-bar">
+    <div class="main-wrapper">
+      <div class="search">
+        <input type="text" placeholder="Search for a brand or product…" [(ngModel)]="inputModel">
+        <button>Search</button>
       </div>
-      <div class="search-utilities">
-        <div class="currency">
+      <div class="account">
+        <span class="currency">
           usd
-        </div>
-        <div class="search">
-          <input type="text" placeholder="Search for a brand or product…" [(ngModel)]="inputModel">
-          <button>Search</button>
-        </div>
-      </div>
-    </div>
-    <div class="navigation">
-      <div class="menu" (mouseover)="displayMenu=true">
-        MENU
-      </div>
-      <div class="account-wrap">
-        <div>
-          <a href="">
-            My Account
-          </a>
-        </div>
-        <div>
-          <a href="">
-            My Bag
-          </a>
-        </div>
+        </span>
+        <a routerLink="/auth/sign-in">
+          My Account
+        </a>
+        <a routerLink="/bag">
+          My Bag
+        </a>
       </div>
     </div>
   </div>
+  <div class="head">
+    <div class="logo" routerLink="/">ALMA</div>
+  </div>
+  <div class="navigation">
+    <app-main-menu></app-main-menu>
+  </div>
 </header>
-
-<app-main-menu *kitOverlay="displayMenu"
-               [kitOverlayPosition]="{type: 'dropdown', position: 'bottom', anchor: menuAnchor}"
-               (mouseleave)="displayMenu = false">
-</app-main-menu>

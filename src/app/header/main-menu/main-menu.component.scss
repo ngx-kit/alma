@@ -2,8 +2,28 @@
 @import "../../../common";
 
 :host {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sub {
   background: $whiteSmokeColor;
   border-bottom: 2px solid $mercuryColor;
   display: block;
-  padding: $grid * 2 0;
+  overflow: hidden;
+  .section {
+    padding: $grid * 2 0;
+  }
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  margin: $grid*2.5 0;
+  list-style: none;
+  li {
+    padding: 0 $grid * 2;
+  }
 }

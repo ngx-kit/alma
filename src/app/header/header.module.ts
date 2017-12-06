@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { KitOverlayModule } from '@ngx-kit/core';
+import { KitOutsideClickModule, KitOverlayModule, KitSlideModule } from '@ngx-kit/core';
+import { UiModule } from '../ui/ui.module';
 import { MainHeaderComponent } from './main-header/main-header.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
-import { UiModule } from '../ui/ui.module';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
     RouterModule,
     FormsModule,
     KitOverlayModule,
+    KitSlideModule,
+    KitOutsideClickModule,
     UiModule,
   ],
   declarations: [
