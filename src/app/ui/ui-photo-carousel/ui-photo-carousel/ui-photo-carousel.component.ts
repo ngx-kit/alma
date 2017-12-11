@@ -1,9 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { KitSlideHostService, KitSlideId } from '@ngx-kit/core';
-import 'rxjs/add/observable/from';
-import 'rxjs/add/observable/interval';
-import 'rxjs/add/observable/merge';
-import 'rxjs/add/operator/debounceTime';
 import { Observable } from 'rxjs/Observable';
 import { UiPhotoCarouselPhoto } from '../meta';
 
