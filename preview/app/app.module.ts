@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { KitFullForRootModule } from '@ngx-kit/ngx-kit';
 import { UiModule } from '../../src/app/ui/ui.module';
-import { cards } from '../../src/app/products/cards/cards';
+import { cards } from './cards/cards';
 import { AppComponent } from './app.component';
 import { PreviewComponent } from './preview/preview.component';
 

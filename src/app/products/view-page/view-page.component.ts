@@ -9,6 +9,10 @@ import { Product } from '../../data/meta';
   styleUrls: ['./view-page.component.scss'],
 })
 export class ViewPageComponent implements OnInit {
+  color: any;
+
+  size: any;
+
   product: Product;
 
   recent: Product[];

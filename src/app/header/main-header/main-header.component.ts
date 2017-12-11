@@ -6,6 +6,8 @@ import { Component, ElementRef, OnInit } from '@angular/core';
   styleUrls: ['./main-header.component.scss'],
 })
 export class MainHeaderComponent implements OnInit {
+  inputModel: any;
+
   displayMenu = false;
 
   menuAnchor: any;

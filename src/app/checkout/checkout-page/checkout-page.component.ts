@@ -3,13 +3,18 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-checkout-page',
   templateUrl: './checkout-page.component.html',
-  styleUrls: ['./checkout-page.component.scss']
+  styleUrls: ['./checkout-page.component.scss'],
 })
 export class CheckoutPageComponent implements OnInit {
+  inputModel: any;
 
-  constructor() { }
+  radioModel: any;
+
+  selectModel: any;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
-
 }

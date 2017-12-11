@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-in-page.component.scss']
 })
 export class SignInPageComponent implements OnInit {
+  inputModel: any;
 
   constructor() { }
 

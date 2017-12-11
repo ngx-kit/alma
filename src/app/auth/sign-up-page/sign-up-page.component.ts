@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-up-page.component.scss']
 })
 export class SignUpPageComponent implements OnInit {
+  inputModel: any;
 
   constructor() { }
 
