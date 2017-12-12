@@ -15,7 +15,7 @@ import { UiModule } from './ui/ui.module';
 
 @NgModule({
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
     FormsModule,
     BrowserAnimationsModule,

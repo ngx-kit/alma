@@ -34,4 +34,7 @@ const mods = [
   entryComponents: [],
 })
 export class UiModule {
+  constructor() {
+    console.log('UI MODULE CONSTR');
+  }
 }
