@@ -13,7 +13,11 @@
     "serve:server": "node dist/server",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "npm run build:server && npm run website:docker:build && npm run website:docker:push",
+    "docker:build": "docker build -t dhub.nvx.me:443/ngx-kit-ui-alma .",
+    "docker:run": "docker run -d -p 4001:4000 dhub.nvx.me:443/ngx-kit-ui-alma",
+    "docker:push": "docker push dhub.nvx.me:443/ngx-kit-ui-alma"
   },
   "private": true,
   "dependencies": {
