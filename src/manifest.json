@@ -1,0 +1,16 @@
+{
+  "name": "Alma eCommerce by ngx-kit",
+  "short_name": "Alma",
+  "description": "eCommerce Angular demo based on ngx-kit",
+  "icons": [
+    {
+      "src": "assets/icons/alma-192.png",
+      "sizes": "192x192",
+      "type": "image\/png"
+    }
+  ],
+  "display": "standalone",
+  "start_url": "./?utm_source=web_app_manifest",
+  "background_color": "#3d4044",
+  "theme_color": "#3d4044"
+}
