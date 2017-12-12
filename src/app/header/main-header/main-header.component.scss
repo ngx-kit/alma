@@ -1,5 +1,5 @@
-@import "../../../params";
-@import "../../../common";
+@import "params";
+@import "common";
 
 :host {
   margin-bottom: $grid*1.5;
@@ -9,8 +9,9 @@
 }
 
 .top-bar {
-  background: $charcoalColor;
+  background: $themeBackground;
   color: $whiteSmokeColor;
+  padding: $grid 0;
   .main-wrapper {
     align-items: baseline;
     display: flex;
@@ -47,13 +48,13 @@
   input {
     border: 1px solid #000000;
     box-sizing: border-box;
-    height: 44px;
+    height: 28px;
     padding: 0 $grid*1.5;
     width: 230px;
   }
   button {
     background: #333;
-    padding: $grid*1.5 $grid*2;
+    padding: 0 $grid*1.5;
     color: #fff;
     border: 1px solid #333;
     text-align: center;
@@ -62,32 +63,13 @@
   }
 }
 
-@media (max-width: 800px) {
-  .currency {
-    padding-right: $grid*2;
-  }
-  .search {
-    width: auto;
-    input {
-      height: 33px;
-    }
-    button {
-      padding: $grid $grid*2;
-    }
-  }
-}
 @media (max-width: 600px) {
-  .head {
-  flex-direction: column;
-  }
-  .search-utilities{
-    margin-top: $grid*3;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .search{
-    input{
-      width: 150px;
+  .top-bar {
+    .main-wrapper {
+      flex-direction: column;
+    }
+    .account {
+      padding-top: $grid;
     }
   }
 }

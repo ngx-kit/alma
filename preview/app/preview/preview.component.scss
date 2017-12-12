@@ -1,4 +1,4 @@
-@import "../../../src/params";
+@import "params";
 
 .main-wrapper {
   max-width: 1600px;
@@ -33,7 +33,7 @@
     margin: 0 auto;
     font-weight: 700;
     padding-bottom: 30px;
-    border-bottom: 1px solid $purpleColor;
+    border-bottom: 1px solid $primaryColor;
     font-size: 20px;
   }
   .sub-title {

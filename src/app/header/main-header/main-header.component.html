@@ -1,27 +1,25 @@
-<header>
-  <div class="top-bar">
-    <div class="main-wrapper">
-      <div class="search">
-        <input type="text" placeholder="Search for a brand or product…" [(ngModel)]="inputModel">
-        <button>Search</button>
-      </div>
-      <div class="account">
+<div class="top-bar">
+  <div class="main-wrapper">
+    <div class="search">
+      <input type="text" placeholder="Search for a brand or product…" [(ngModel)]="inputModel">
+      <button>Search</button>
+    </div>
+    <div class="account">
         <span class="currency">
           usd
         </span>
-        <a routerLink="/auth/sign-in">
-          My Account
-        </a>
-        <a routerLink="/bag">
-          My Bag
-        </a>
-      </div>
+      <a routerLink="/auth/sign-in">
+        My Account
+      </a>
+      <a routerLink="/bag">
+        My Bag
+      </a>
     </div>
   </div>
-  <div class="head">
-    <div class="logo" routerLink="/">ALMA</div>
-  </div>
-  <div class="navigation">
-    <app-main-menu></app-main-menu>
-  </div>
-</header>
+</div>
+<div class="head">
+  <div class="logo" routerLink="/">ALMA</div>
+</div>
+<div class="navigation">
+  <app-main-menu></app-main-menu>
+</div>

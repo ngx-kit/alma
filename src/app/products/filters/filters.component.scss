@@ -1,4 +1,4 @@
-@import "../../../params";
+@import "params";
 
 :host {
   border-radius: 6px;
@@ -83,7 +83,7 @@
       width: 16px;
       &:checked {
         &:after {
-          border-color: $purpleColor;
+          border-color: $primaryColor;
         }
       }
     }

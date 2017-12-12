@@ -22,6 +22,11 @@
       "styles": [
         "styles.css"
       ],
+      "stylePreprocessorOptions": {
+        "includePaths": [
+          "styles"
+        ]
+      },
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {

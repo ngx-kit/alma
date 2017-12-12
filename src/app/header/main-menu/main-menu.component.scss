@@ -1,5 +1,5 @@
-@import "../../../params";
-@import "../../../common";
+@import "params";
+@import "common";
 
 :host {
   display: flex;
@@ -23,7 +23,15 @@ ul {
   font-size: 1.2rem;
   margin: $grid*2.5 0;
   list-style: none;
+  padding: 0;
   li {
     padding: 0 $grid * 2;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  ul {
+    flex-wrap: wrap;
   }
 }
