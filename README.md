@@ -1,27 +1,63 @@
-# UiAlma
+# Alma by [ngx-kit](https://ngx-kit.com)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
+Demonstration of Angular eCommerce project based on [ngx-kit](https://ngx-kit.com).
 
-## Development server
+[**Watch the demo!**](https://alma.ngx-kit.com)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[![alma screenshot](./screenshot.png)](https://alma.ngx-kit.com)
 
-## Code scaffolding
+Now in active development, some features are incomplete or stubbed.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+* Angular 5
+* Lazy-loading
+* AOT
+* PWA
+* Server-side rendering
+* Docker build
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Modules
 
-## Running end-to-end tests
+* Home
+* Products
+* Auth
+* Bag
+* Checkout
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Usage
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Installation:
+
+* Clone
+* `npm i`
+
+Dev:
+
+* `npm start`
+* open `localhost:4200`
+
+Default browser build:
+
+* `npm run build:browser`
+
+SSR Build:
+
+* `npm run build:server`
+* `serve:server`
+* open `localhost:4000`
+
+Docker:
+
+* Update docker image name in `package.json` (replace `dhub.nvx.me:443/ngx-kit-ui-alma` with your url)
+* `npm run docker:build`
+* `npm run docker:run`
+* open `localhost:4001`
+
+Docker deploy:
+
+* `npm run deploy`
+* App will be exposed on port 4000.
