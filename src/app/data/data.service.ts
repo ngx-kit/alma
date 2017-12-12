@@ -6,7 +6,7 @@ export class DataService {
   products: Product[] = [
     {
       id: 1,
-      title: 'Product name',
+      title: 'Product name 1',
       description: 'Helmut Lang Women\'s Side Drape Tank Satin Top - White',
       picture: '/assets/0675_Sacha-Scarf_14-1200x1265.png',
       price: 360,
@@ -36,7 +36,7 @@ export class DataService {
     },
     {
       id: 2,
-      title: 'Product name',
+      title: 'Product name 2',
       description: 'Helmut Lang Women\'s Side Drape Tank Satin Top - White',
       picture: '/assets/0675_Sacha-Scarf_14-1200x1265.png',
       price: 360,
@@ -66,7 +66,7 @@ export class DataService {
     },
     {
       id: 3,
-      title: 'Product name',
+      title: 'Product name 3',
       description: 'Helmut Lang Women\'s Side Drape Tank Satin Top - White',
       picture: '/assets/0675_Sacha-Scarf_14-1200x1265.png',
       price: 360,
@@ -96,7 +96,7 @@ export class DataService {
     },
     {
       id: 4,
-      title: 'Product name',
+      title: 'Product name 4',
       description: 'Helmut Lang Women\'s Side Drape Tank Satin Top - White',
       picture: '/assets/0675_Sacha-Scarf_14-1200x1265.png',
       price: 360,
@@ -126,7 +126,7 @@ export class DataService {
     },
     {
       id: 5,
-      title: 'Product name',
+      title: 'Product name 5',
       description: 'Helmut Lang Women\'s Side Drape Tank Satin Top - White',
       picture: '/assets/0675_Sacha-Scarf_14-1200x1265.png',
       price: 360,
@@ -156,7 +156,7 @@ export class DataService {
     },
     {
       id: 6,
-      title: 'Product name',
+      title: 'Product name 6',
       description: 'Helmut Lang Women\'s Side Drape Tank Satin Top - White',
       picture: '/assets/0675_Sacha-Scarf_14-1200x1265.png',
       price: 360,
@@ -186,7 +186,7 @@ export class DataService {
     },
     {
       id: 7,
-      title: 'Product name',
+      title: 'Product name 7',
       description: 'Helmut Lang Women\'s Side Drape Tank Satin Top - White',
       picture: '/assets/0675_Sacha-Scarf_14-1200x1265.png',
       price: 360,
@@ -216,7 +216,7 @@ export class DataService {
     },
     {
       id: 8,
-      title: 'Product name',
+      title: 'Product name 8',
       description: 'Helmut Lang Women\'s Side Drape Tank Satin Top - White',
       picture: '/assets/0675_Sacha-Scarf_14-1200x1265.png',
       price: 360,
@@ -246,7 +246,7 @@ export class DataService {
     },
     {
       id: 9,
-      title: 'Product name',
+      title: 'Product name 9',
       description: 'Helmut Lang Women\'s Side Drape Tank Satin Top - White',
       picture: '/assets/0675_Sacha-Scarf_14-1200x1265.png',
       price: 360,

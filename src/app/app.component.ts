@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { KitIconsRegistryService } from '@ngx-kit/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { KitIconsRegistryService, KitPlatformService } from '@ngx-kit/core';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,9 @@ import { KitIconsRegistryService } from '@ngx-kit/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor(private icons: KitIconsRegistryService) {
+  constructor(private icons: KitIconsRegistryService,
+              private router: Router,
+              private platform: KitPlatformService) {
     this.icons.registerSet([
       {
         name: 'star',
@@ -18,5 +21,11 @@ export class AppComponent {
         url: '/assets/icons/cart.svg',
       },
     ]);
+    // scroll to top
+    this.router.events.subscribe(event => {
+      if (this.platform.isBrowser() && event instanceof NavigationEnd) {
+        window.scrollTo(0, 0);
+      }
+    });
   }
 }
