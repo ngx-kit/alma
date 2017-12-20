@@ -2,8 +2,8 @@
   <li><a (click)="activate(1)" (mouseover)="activate(1)">Women</a></li>
   <li><a (click)="activate(2)" (mouseover)="activate(2)">Men</a></li>
   <li><a (click)="activate(3)" (mouseover)="activate(3)">Baby&Kids</a></li>
-  <li><a (click)="activate(4)" (mouseover)="activate(4)">Living</a></li>
-  <li><a (click)="activate(5)" (mouseover)="activate(5)">Gifting</a></li>
+  <li><a (click)="activate(4)" (mouseover)="activate(4)">Activities</a></li>
+  <li><a (click)="activate(5)" (mouseover)="activate(5)">Brands</a></li>
   <li><a (click)="activate(6)" (mouseover)="activate(6)">SALE</a></li>
 </ul>
 
@@ -17,34 +17,284 @@
     <div *kitSlide="1"
          [@slide]="slideDirection | async"
          class="section">
-      Women Section
-      <a routerLink="/products">Products</a>
-      <a routerLink="/products/1">View Product</a>
+      <div>
+        <div class="title">
+          Clothing
+        </div>
+        <ul>
+          <li><a routerLink="/products">Jackets</a></li>
+          <li><a routerLink="/products">Pants</a></li>
+          <li><a routerLink="/products">Rainwear</a></li>
+          <li><a routerLink="/products">Skirts</a></li>
+          <li><a routerLink="/products">Shorts</a></li>
+          <li><a routerLink="/products"><b>View All</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Shoes & Boots
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Boots</a></li>
+          <li><a routerLink="/products">Casual</a></li>
+          <li><a routerLink="/products">Cross country skate boots</a></li>
+          <li><a routerLink="/products">Ski boot liners</a></li>
+          <li><a routerLink="/products/1">Ski touring boots</a></li>
+          <li><a routerLink="/products"><b>View All</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Accessories
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Hats, Earmuffs & Beanies</a></li>
+          <li><a routerLink="/products/1">Headliners & Masks</a></li>
+          <li><a routerLink="/products/1">Gaiters & Scarves</a></li>
+          <li><a routerLink="/products/1">Gloves, Mittens & Liners</a></li>
+          <li><a routerLink="/products/1">Snow Socks</a></li>
+          <li><a routerLink="/products/1">Warmer</a></li>
+          <li><a routerLink="/products"><b>View All</b></a></li>
+        </ul>
+      </div>
     </div>
     <div *kitSlide="2"
          [@slide]="slideDirection | async"
          class="section">
-      Men Section
+      <div>
+        <div class="title">
+          Clothing
+        </div>
+        <ul>
+          <li><a routerLink="/products">Jackets</a></li>
+          <li><a routerLink="/products">Pants</a></li>
+          <li><a routerLink="/products">Rainwear</a></li>
+          <li><a routerLink="/products">Skirts</a></li>
+          <li><a routerLink="/products">Shorts</a></li>
+          <li><a routerLink="/products"><b>View All</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Shoes & Boots
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Boots</a></li>
+          <li><a routerLink="/products">Casual</a></li>
+          <li><a routerLink="/products">Cross country skate boots</a></li>
+          <li><a routerLink="/products">Ski boot liners</a></li>
+          <li><a routerLink="/products/1">Ski touring boots</a></li>
+          <li><a routerLink="/products"><b>View All</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Accessories
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Hats, Earmuffs & Beanies</a></li>
+          <li><a routerLink="/products/1">Headliners & Masks</a></li>
+          <li><a routerLink="/products/1">Gaiters & Scarves</a></li>
+          <li><a routerLink="/products/1">Gloves, Mittens & Liners</a></li>
+          <li><a routerLink="/products/1">Snow Socks</a></li>
+          <li><a routerLink="/products/1">Warmer</a></li>
+          <li><a routerLink="/products"><b>View All</b></a></li>
+        </ul>
+      </div>
     </div>
     <div *kitSlide="3"
          [@slide]="slideDirection | async"
          class="section">
-      Baby&Kids Section
+      <div>
+        <div class="title">
+          Clothing
+        </div>
+        <ul>
+          <li><a routerLink="/products">Jackets</a></li>
+          <li><a routerLink="/products">Pants</a></li>
+          <li><a routerLink="/products">Rainwear</a></li>
+          <li><a routerLink="/products">Skirts</a></li>
+          <li><a routerLink="/products">Shorts</a></li>
+          <li><a routerLink="/products"><b>View All</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Shoes & Boots
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Boots</a></li>
+          <li><a routerLink="/products">Casual</a></li>
+          <li><a routerLink="/products">Cross country skate boots</a></li>
+          <li><a routerLink="/products">Ski boot liners</a></li>
+          <li><a routerLink="/products/1">Ski touring boots</a></li>
+          <li><a routerLink="/products"><b>View All</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Accessories
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Hats, Earmuffs & Beanies</a></li>
+          <li><a routerLink="/products/1">Headliners & Masks</a></li>
+          <li><a routerLink="/products/1">Gaiters & Scarves</a></li>
+          <li><a routerLink="/products/1">Gloves, Mittens & Liners</a></li>
+          <li><a routerLink="/products/1">Snow Socks</a></li>
+          <li><a routerLink="/products/1">Warmer</a></li>
+          <li><a routerLink="/products"><b>View All</b></a></li>
+        </ul>
+      </div>
     </div>
     <div *kitSlide="4"
          [@slide]="slideDirection | async"
          class="section">
-      Living Section
+      <div>
+        <div class="title">
+          Snow Skiing
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Skis</a></li>
+          <li><a routerLink="/products/1">Ski Poles</a></li>
+          <li><a routerLink="/products/1">Cross Country Skis</a></li>
+          <li><a routerLink="/products/1">Ski Boots</a></li>
+          <li><a routerLink="/products/1">Ski Bindings</a></li>
+          <li><a routerLink="/products"><b>View All</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Snow Skiing
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Snowboarding</a></li>
+          <li><a routerLink="/products/1">Snowboards</a></li>
+          <li><a routerLink="/products/1">Snowboard Bindings</a></li>
+          <li><a routerLink="/products/1">Snowboard Boots</a></li>
+          <li><a routerLink="/products"><b>View All</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          Snow Gear
+        </div>
+        <ul>
+          <li><a routerLink="/products/1">Goggles</a></li>
+          <li><a routerLink="/products/1">Helmets & Protective Gear</a></li>
+          <li><a routerLink="/products/1">Accessories</a></li>
+          <li><a routerLink="/products/1">Sleds, Toboggans & Snowshoes</a></li>
+          <li><a routerLink="/products"><b>View All</b></a></li>
+        </ul>
+      </div>
     </div>
     <div *kitSlide="5"
          [@slide]="slideDirection | async"
          class="section">
-      Gifting Section
-    </div>
-    <div *kitSlide="6"
-         [@slide]="slideDirection | async"
-         class="section">
-      SALE SECTION
+      <div>
+        <div class="title">
+          A
+        </div>
+        <ul>
+          <li><a routerLink="/products"> Abus Security</a></li>
+          <li><a routerLink="/products">Accurate</a></li>
+          <li><a routerLink="/products">ACS</a></li>
+          <li><a routerLink="/products">Adidas</a></li>
+          <li><a routerLink="/products">Adrenaline</a></li>
+          <li><a routerLink="/products">AFRC</a></li>
+          <li><a routerLink="/products"></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          B
+        </div>
+        <ul>
+          <li><a routerLink="/products">Billabong</a></li>
+          <li><a routerLink="/products">Birkenstock</a></li>
+          <li><a routerLink="/products">Bison</a></li>
+          <li><a routerLink="/products">Black Diamond</a></li>
+          <li><a routerLink="/products">Blackburn</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          C
+        </div>
+        <ul>
+          <li><a routerLink="/products">Coleman</a></li>
+          <li><a routerLink="/products">Columbia</a></li>
+          <li><a routerLink="/products">Continental</a></li>
+          <li><a routerLink="/products">Copilot</a></li>
+          <li><a routerLink="/products">Costa Del Mar</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          D
+        </div>
+        <ul>
+          <li><a routerLink="/products">Dabello Sports</a></li>
+          <li><a routerLink="/products">Dakine</a></li>
+          <li><a routerLink="/products">Dalbello</a></li>
+          <li><a routerLink="/products">Darn Tough</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          E
+        </div>
+        <ul>
+          <li><a routerLink="/products">Elan</a></li>
+          <li><a routerLink="/products">Electric</a></li>
+          <li><a routerLink="/products">Element</a></li>
+          <li><a routerLink="/products"></a></li>
+          <li><a routerLink="/products"></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          R
+        </div>
+        <ul>
+          <li><a routerLink="/products">Rafters</a></li>
+          <li><a routerLink="/products">Rainbow</a></li>
+          <li><a routerLink="/products">Raleigh</a></li>
+          <li><a routerLink="/products">Rav X</a></li>
+          <li><a routerLink="/products">Rawik</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          T
+        </div>
+        <ul>
+          <li><a routerLink="/products">Tecnica</a></li>
+          <li><a routerLink="/products">Tenergy</a></li>
+          <li><a routerLink="/products">Tensor</a></li>
+          <li><a routerLink="/products">Terramar</a></li>
+          <li><a routerLink="/products">Teva</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          V
+        </div>
+        <ul>
+          <li><a routerLink="/products">Vans</a></li>
+          <li><a routerLink="/products">Vasque</a></li>
+          <li><a routerLink="/products">Velox</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="title">
+          W
+        </div>
+        <ul>
+          <li><a routerLink="/products">Wald</a></li>
+          <li><a routerLink="/products">Wd-40</a></li>
+          <li><a routerLink="/products">Wheel Master</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
