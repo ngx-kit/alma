@@ -14,6 +14,29 @@
   overflow: hidden;
   .section {
     padding: $grid * 2 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    >div{
+      padding-right: 20px;
+    }
+    .title{
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    ul{
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      li{
+        font-size: 1rem;
+        padding: 5px 0;
+        a{
+          color: initial;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
 
