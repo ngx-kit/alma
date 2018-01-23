@@ -11,9 +11,9 @@
 .top-bar {
   background: $themeBackground;
   color: $whiteSmokeColor;
-  padding: $grid 0;
+  padding: $grid*2 0;
   .main-wrapper {
-    align-items: baseline;
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,7 +22,10 @@
     a {
       color: $whiteSmokeColor;
       text-decoration: none;
-      margin-left: $grid * 2;
+      margin-right: $grid * 2;
+      &:hover {
+        color: $primaryColor;
+      }
     }
   }
 }
@@ -44,32 +47,34 @@
 .search {
   display: flex;
   flex-direction: row;
-  width: 360px;
   input {
-    border: 1px solid #000000;
+    border: none;
     box-sizing: border-box;
-    height: 28px;
+    border-radius: 4px 0 0 4px;
+    height: 32px;
     padding: 0 $grid*1.5;
-    width: 230px;
+    width: 220px;
   }
   button {
-    background: #333;
-    padding: 0 $grid*1.5;
+    background: $primaryColor;
+    padding: 0 $grid*2;
+    cursor: pointer;
     color: #fff;
-    border: 1px solid #333;
+    border: none;
+    border-radius: 0 4px 4px 0;
     text-align: center;
     text-transform: uppercase;
     box-sizing: border-box;
+    &:hover {
+      box-shadow: 0 5px 30px rgba(79, 70, 228, 0.8);
+    }
   }
 }
 
-@media (max-width: 600px) {
-  .top-bar {
-    .main-wrapper {
-      flex-direction: column;
-    }
-    .account {
-      padding-top: $grid;
+@media (max-width: 400px) {
+  .search {
+    input {
+      width: 100px;
     }
   }
 }

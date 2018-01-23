@@ -2,6 +2,7 @@
 @import "common";
 
 :host {
+  margin: $grid*2 0 $grid*4 0;
 }
 
 .breadcrumbs {
@@ -146,7 +147,13 @@
       vertical-align: middle;
       width: auto;
       &.-active {
-        background: $mercuryColor;
+        background: $primaryColor;
+        border-color: $primaryColor;
+        color: #ffffff;
+      }
+      &:hover{
+        background: $primaryColor;
+        color: #ffffff;
       }
     }
   }
@@ -157,6 +164,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-bottom: $grid*3;
 }
 
 .card {

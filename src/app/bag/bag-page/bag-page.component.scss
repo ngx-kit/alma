@@ -52,6 +52,10 @@
   .subtotal {
     font-weight: 700;
   }
+  .remove{
+    color: $primaryColor;
+    cursor: pointer;
+  }
   td {
     border-bottom: 1px solid $mercuryColor;
     padding: $grid*1.5;
@@ -73,11 +77,15 @@
 .checkout {
   line-height: 3.7rem;
   padding: 0 $grid*3;
-  background: #333333;
+  background: $primaryColor;
   border: none;
   color: #ffffff;
+  cursor: pointer;
   text-transform: uppercase;
   font-weight: 400;
+  &:hover{
+    box-shadow: 0 5px 30px rgba(79, 70, 228, 0.8);
+  }
 }
 
 @media (max-width: 600px) {

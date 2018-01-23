@@ -2,17 +2,16 @@
   <div class="main-wrapper">
     <div class="search">
       <input type="text" placeholder="Search for a brand or product…" [(ngModel)]="inputModel">
-      <button>Search</button>
+      <button>
+        <kit-icon [name]="'search'" size="20px"></kit-icon>
+      </button>
     </div>
     <div class="account">
-        <span class="currency">
-          usd
-        </span>
       <a routerLink="/auth/sign-in">
-        My Account
+        <kit-icon [name]="'avatar'" size="25px"></kit-icon>
       </a>
       <a routerLink="/bag">
-        My Bag
+        <kit-icon [name]="'shopping-cart'" size="25px"></kit-icon>
       </a>
     </div>
   </div>

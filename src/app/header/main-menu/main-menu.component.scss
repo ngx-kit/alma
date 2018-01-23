@@ -17,23 +17,27 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    >div{
+    > div {
       padding-right: 20px;
     }
-    .title{
+    .title {
       font-size: 1.3rem;
       font-weight: 600;
+      margin-bottom: $grid;
     }
-    ul{
+    ul {
       align-items: flex-start;
       display: flex;
       flex-direction: column;
-      li{
+      li {
         font-size: 1rem;
         padding: 5px 0;
-        a{
+        a {
           color: initial;
           text-decoration: none;
+          &:hover {
+            color: $primaryColor;
+          }
         }
       }
     }
@@ -44,12 +48,17 @@ ul {
   display: flex;
   flex-direction: row;
   font-size: 1.2rem;
-  margin: $grid*2.5 0;
+  margin: 0;
   list-style: none;
   padding: 0;
   li {
-    padding: 0 $grid * 2;
+    cursor: pointer;
+    padding: $grid*2.5 $grid * 2;
     text-align: center;
+    &:hover {
+      background: $whiteSmokeColor;
+      color: $primaryColor;
+    }
   }
 }
 

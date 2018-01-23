@@ -29,6 +29,9 @@ ul {
     a{
       color: $whiteSmokeColor;
       text-decoration: none;
+      &:hover{
+        color: $primaryColor;
+      }
     }
   }
 }

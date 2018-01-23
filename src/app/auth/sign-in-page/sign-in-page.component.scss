@@ -9,19 +9,23 @@
   align-items: flex-start;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .login-panel {
   border: 1px solid $mercuryColor;
   box-sizing: border-box;
+  box-shadow: 0 0 6px 0 rgba(225, 225, 225, 0.7);
+  border-radius: 4px;
   margin: 0 $grid*3;
-  padding: $grid*2.5;
+  padding: $grid*4;
   width: 50%;
 }
 
 .title {
   font-weight: 400;
   font-size: 1.9rem;
+  margin: 0 0 $grid*8 0;
   text-align: center;
 }
 
@@ -49,38 +53,33 @@ input {
 }
 
 .login {
-  background: $textColor;
+  background: $primaryColor;
   border: none;
   color: #ffffff;
+  cursor: pointer;
   font-weight: 400;
   line-height: 3.7rem;
   padding: 0 $grid*3;
   text-transform: uppercase;
-}
-
-.social-box {
-  text-align: center;
-  p {
-    font-size: 1.5rem;
+  &:hover{
+    box-shadow: 0 5px 30px rgba(79, 70, 228, 0.8);
   }
 }
 
-.facebook {
-  background: #4267B2;
-  border: none;
-  color: #ffffff;
-  font-weight: 700;
-  line-height: 3.7rem;
-  padding: 0 $grid*3;
-}
 @media (max-width: 700px) {
 .container{
-  align-items: inherit;
+  align-items: center;
   flex-direction: column;
 }
   .login-panel{
     flex-grow: 1;
     margin: $grid*2 0;
-    width: auto;
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .login-panel{
+    width: 100%;
   }
 }

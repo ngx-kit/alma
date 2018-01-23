@@ -1,3 +1,5 @@
+@import "params";
+
 :host {
   border: 1px solid #CCCCCC;
   padding: 6px 8px;
@@ -9,6 +11,8 @@
 button {
   background: transparent;
   border: none;
+  color: $primaryColor;
+  cursor: pointer;
   &:focus {
     outline: none;
   }

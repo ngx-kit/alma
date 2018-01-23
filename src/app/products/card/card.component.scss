@@ -2,9 +2,18 @@
 
 :host {
   box-sizing: border-box;
+  width: 100%;
+}
+
+a {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  padding: $grid*2;
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    box-shadow: 0 0 15px rgba(88, 104, 215, 0.4);
+  }
 }
 
 .product-photo {
@@ -16,7 +25,6 @@
   flex-direction: row;
   justify-content: center;
   margin-bottom: $grid*2;
-  padding: $grid*2;
   width: 100%;
   img {
     max-height: 100%;
@@ -31,6 +39,10 @@
   .title {
     h3 {
       font-size: 1.2rem;
+    }
+    a {
+      color: $textColor;
+      text-decoration: none;
     }
   }
   .sub-title {

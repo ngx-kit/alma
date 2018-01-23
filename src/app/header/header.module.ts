@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { KitOutsideClickModule, KitOverlayModule, KitSlideModule } from '@ngx-kit/core';
+import { KitIconsModule, KitModule, KitOutsideClickModule, KitOverlayModule, KitSlideModule } from '@ngx-kit/core';
 import { UiModule } from '../ui/ui.module';
 import { MainHeaderComponent } from './main-header/main-header.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
@@ -12,6 +12,7 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
     CommonModule,
     RouterModule,
     FormsModule,
+    KitIconsModule,
     KitOverlayModule,
     KitSlideModule,
     KitOutsideClickModule,

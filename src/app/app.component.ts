@@ -20,6 +20,17 @@ export class AppComponent {
         name: 'cart',
         url: '/assets/icons/cart.svg',
       },
+      {
+        name: 'avatar',
+        url: '/assets/icons/avatar.svg',
+      },
+      {
+        name: 'shopping-cart',
+        url: '/assets/icons/shopping-cart.svg',
+      }, {
+        name: 'search',
+        url: '/assets/icons/search.svg',
+      },
     ]);
     // scroll to top
     this.router.events.subscribe(event => {

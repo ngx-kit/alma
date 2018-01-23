@@ -1,21 +1,24 @@
+@import "params";
+
 :host {
   &input:not([type="checkbox"]):not([type="radio"]) {
     box-sizing: border-box;
     width: 100%;
     border-radius: 2px;
     transition: all .3s;
-    padding: 4px 8px;
+    padding: 8px;
     box-shadow: 0 0 2px 0 rgba(50, 50, 50, 0.1);
-    background: #f7f7f7;
-    border: 1px solid #d6d6d6;
+    background: transparent;
+    border: 1px solid $mercuryColor;
     color: #4a505a;
     &:hover {
       outline: none;
-      border-color: #acadb0;
+      border-color: $primaryColor2;
     }
     &:focus {
       outline: none;
-      border-color: #2399e5;
+      border-color: $primaryColor2;
+      box-shadow: 0 0 6px 0 rgba(109, 237, 246, 0.7);
     }
   }
 
@@ -34,8 +37,8 @@
       margin: 0;
       border-radius: 2px;
       transition: all .3s;
-      background: #f7f7f7;
-      border: 1px solid #d6d6d6;
+      background: #ffffff;
+      border: 1px solid $mercuryColor;
     }
     &:after {
       transform: rotate(45deg) scale(1);
@@ -49,19 +52,19 @@
       border-right-width: 2px;
       border-bottom-width: 2px;
       border-left-width: 0px;
-      border-color: #f7f7f7;
+      border-color: #ffffff;
       border-style: solid;
       content: " ";
       transition: all .3s;
     }
     &:hover:before {
-      border-color: #acadb0;
+      border-color: $primaryColor2;
     }
     &:focus:before {
-      border-color: #acadb0;
+      border-color: $mercuryColor;
     }
     &:checked:after {
-      border-color: #2399e5;
+      border-color: $primaryColor;
     }
   }
 
@@ -81,8 +84,8 @@
       margin: 0;
       border-radius: 50%;
       transition: all .3s;
-      background: #f7f7f7;
-      border: 1px solid #d6d6d6;
+      background: #ffffff;
+      border: 1px solid $mercuryColor;
     }
     &:after {
       position: absolute;
@@ -91,20 +94,20 @@
       display: table;
       width: 6px;
       height: 6px;
-      background: #f7f7f7;
+      background: #ffffff;
       border: 0;
       border-radius: 50%;
       content: " ";
       transition: all .3s;
     }
     &:hover:before {
-      border-color: #acadb0;
+      border-color: $primaryColor2;
     }
     &:focus:before {
-      border-color: #acadb0;
+      border-color: $mercuryColor;
     }
     &:checked:after {
-      background: #2399e5;
+      background: $primaryColor;
     }
   }
 }

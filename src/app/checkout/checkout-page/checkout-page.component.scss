@@ -96,7 +96,7 @@ label {
       box-sizing: border-box;
       margin-right: $grid;
       width: 50%;
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
     }
@@ -124,22 +124,26 @@ label {
 }
 
 .submit {
-  background: $textColor;
+  background: $primaryColor;
   border: none;
   color: #ffffff;
+  cursor: pointer;
   font-weight: 400;
   line-height: 3.6rem;
   padding: 0 $grid*3;
   text-transform: uppercase;
+  &:hover {
+    box-shadow: 0 5px 30px rgba(79, 70, 228, 0.8);
+  }
 }
 
 .order-summary {
   border: 1px solid $mercuryColor;
   width: 280px;
   .header {
+    background: $primaryColor;
     box-sizing: border-box;
-    background: $mercuryColor;
-    font-weight: 700;
+    color: #ffffff;
     padding: $grid*1.5;
     width: 100%;
   }
@@ -188,34 +192,35 @@ label {
     font-size: 1.2rem;
     padding: $grid*1.5;
     text-align: center;
-    td{
+    td {
       border-bottom: none;
     }
   }
 }
+
 @media (max-width: 900px) {
-  .checkout-box{
+  .checkout-box {
     flex-direction: column;
   }
-  .customer-details{
+  .customer-details {
     width: 100%;
   }
-  .order-summary{
+  .order-summary {
     width: 100%;
   }
 }
 
 @media (max-width: 600px) {
-  section{
+  section {
     align-items: inherit;
     flex-direction: column;
   }
-  .label-wrap{
+  .label-wrap {
     flex-shrink: 0;
     text-align: left;
     width: 110px;
   }
-  .container{
+  .container {
     flex-grow: 1;
     width: auto;
   }
