@@ -1,12 +1,16 @@
 <div class="thumbs">
   <a *ngFor="let photo of photos; let index = index"
      href="javascript:void(0)"
-     [class.-active]="(active$ | async) === index"
+     [class.-active]="(activeChanges | async) === index"
      (click)="activate(index)">
     <img [attr.src]="photo.thumb">
   </a>
 </div>
-<div class="wrapper">
+<div class="wrapper"
+     (swipeleft)="next()"
+     (swipeup)="next()"
+     (swiperight)="prev()"
+     (swipedown)="prev()">
   <ng-container *ngFor="let photo of photos; let index = index">
     <ui-photo-carousel-slide *kitSlide="index" [photo]="photo"></ui-photo-carousel-slide>
   </ng-container>

@@ -10,31 +10,32 @@ import { UiSideMenuModule } from './ui-side-menu/ui-side-menu.module';
 import { UiSliderModule } from './ui-slider/ui-slider.module';
 import { UiTextareaModule } from './ui-textarea/ui-textarea.module';
 
-const mods = [
-  UiButtonModule,
-  UiCustomSelectModule,
-  UiInputModule,
-  UiPhotoCarouselModule,
-  UiQtInputModule,
-  UiRatingModule,
-  UiSelectModule,
-  UiSideMenuModule,
-  UiSliderModule,
-  UiTextareaModule,
-];
-
 @NgModule({
   imports: [
-    ...mods,
+    UiButtonModule,
+    UiCustomSelectModule,
+    UiInputModule,
+    UiPhotoCarouselModule,
+    UiQtInputModule,
+    UiRatingModule,
+    UiSelectModule,
+    UiSideMenuModule,
+    UiSliderModule,
+    UiTextareaModule,
   ],
   declarations: [],
   exports: [
-    ...mods,
+    UiButtonModule,
+    UiCustomSelectModule,
+    UiInputModule,
+    UiPhotoCarouselModule,
+    UiQtInputModule,
+    UiRatingModule,
+    UiSelectModule,
+    UiSideMenuModule,
+    UiSliderModule,
+    UiTextareaModule,
   ],
-  entryComponents: [],
 })
 export class UiModule {
-  constructor() {
-    console.log('UI MODULE CONSTR');
-  }
 }

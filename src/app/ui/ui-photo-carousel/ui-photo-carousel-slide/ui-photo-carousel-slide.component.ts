@@ -16,16 +16,16 @@ import { UiPhotoCarouselPhoto } from '../meta';
   animations: [
     trigger('slide', [
       // entering
-      transition('void => next', [
+      transition('void => prev', [
         style({transform: 'translateY(-100%)'}),
         animate('250ms cubic-bezier(0.0, 0.0, 0.2, 1)'),
       ]),
-      transition('void => prev', [
+      transition('void => next', [
         style({transform: 'translateY(100%)'}),
         animate('250ms cubic-bezier(0.0, 0.0, 0.2, 1)'),
       ]),
       // leaving
-      transition('next => void', [
+      transition('prev => void', [
         style({
           position: 'absolute',
           top: 0,
@@ -34,7 +34,7 @@ import { UiPhotoCarouselPhoto } from '../meta';
         }),
         animate('250ms cubic-bezier(0.0, 0.0, 0.2, 1)', style({transform: 'translateY(100%)'})),
       ]),
-      transition('prev => void', [
+      transition('next => void', [
         style({
           position: 'absolute',
           top: 0,
