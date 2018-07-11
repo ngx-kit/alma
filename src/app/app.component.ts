@@ -11,7 +11,7 @@ export class AppComponent {
   constructor(private icons: KitIconsRegistryService,
               private router: Router,
               private platform: KitPlatformService) {
-    this.icons.registerSet([
+    this.icons.add([
       {
         name: 'star',
         url: '/assets/icons/star.svg',

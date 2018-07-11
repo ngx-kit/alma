@@ -1,4 +1,4 @@
-import { animate, style, transition, trigger } from '@angular/animations';
+import { animate, animateChild, query, style, transition, trigger } from '@angular/animations';
 import { Component, ElementRef, HostBinding, OnInit } from '@angular/core';
 import { KitSlideDirection, KitSlideHostService } from '@ngx-kit/core';
 import { Observable } from 'rxjs/Observable';
@@ -8,6 +8,11 @@ import { Observable } from 'rxjs/Observable';
   templateUrl: './main-menu.component.html',
   styleUrls: ['./main-menu.component.scss'],
   animations: [
+    trigger('menuHost', [
+      transition(':enter, :leave', [
+        query('@*', animateChild(), {optional: true}),
+      ]),
+    ]),
     trigger('fade', [
       transition(':enter', [
         style({
@@ -27,11 +32,11 @@ import { Observable } from 'rxjs/Observable';
     trigger('slide', [
       // entering
       transition('void => next', [
-        style({transform: 'translateX(-100%)'}),
+        style({transform: 'translateX(100%)'}),
         animate('250ms cubic-bezier(0.0, 0.0, 0.2, 1)'),
       ]),
       transition('void => prev', [
-        style({transform: 'translateX(100%)'}),
+        style({transform: 'translateX(-100%)'}),
         animate('250ms cubic-bezier(0.0, 0.0, 0.2, 1)'),
       ]),
       // leaving
@@ -42,7 +47,7 @@ import { Observable } from 'rxjs/Observable';
           right: 0,
           left: 0,
         }),
-        animate('350ms cubic-bezier(0.0, 0.0, 0.2, 1)', style({transform: 'translateX(100%)'})),
+        animate('250ms cubic-bezier(0.0, 0.0, 0.2, 1)', style({transform: 'translateX(-100%)'})),
       ]),
       transition('prev => void', [
         style({
@@ -51,7 +56,7 @@ import { Observable } from 'rxjs/Observable';
           right: 0,
           left: 0,
         }),
-        animate('350ms cubic-bezier(0.0, 0.0, 0.2, 1)', style({transform: 'translateX(-100%)'})),
+        animate('250ms cubic-bezier(0.0, 0.0, 0.2, 1)', style({transform: 'translateX(100%)'})),
       ]),
     ]),
   ],
@@ -66,8 +71,10 @@ export class MainMenuComponent implements OnInit {
 
   slideDirection: Observable<KitSlideDirection>;
 
-  constructor(private el: ElementRef,
-              private slideHost: KitSlideHostService) {
+  constructor(
+    private el: ElementRef,
+    private slideHost: KitSlideHostService,
+  ) {
     this.slideHost.activateFirst = false;
   }
 
